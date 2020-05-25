@@ -1,0 +1,1800 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Simpson’s Paradox (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta property="citation_title" content="Simpson’s Paradox" />
+<meta property="citation_author" content="Malinas, Gary" />
+<meta property="citation_author" content="Bigelow, John" />
+<meta property="citation_publication_date" content="2004/02/02" />
+<meta name="DC.title" content="Simpson’s Paradox" />
+<meta name="DC.creator" content="Malinas, Gary" />
+<meta name="DC.creator" content="Bigelow, John" />
+<meta name="DCTERMS.issued" content="2004-02-02" />
+<meta name="DCTERMS.modified" content="2016-04-01" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="../../search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="#toc">Entry Contents</a></li>
+            <li><a href="#Bib">Bibliography</a></li>
+            <li><a href="#Aca">Academic Tools</a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/paradox-simpson/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=paradox-simpson">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+
+
+<div id="aueditable"><!--DO NOT MODIFY THIS LINE AND ABOVE-->
+
+<h1>Simpson&rsquo;s Paradox</h1><div id="pubinfo"><em>First published Mon Feb 2, 2004; substantive revision Fri Apr 1, 2016</em></div>
+
+<div id="preamble">
+
+<p>
+Consider the following story:</p>
+
+<div class="indent">
+<p>
+The label of each packet of FIXIT-Y-capsuls from the (imaginary)
+Globalfixit Pharmacuticals Ltd. carries the following recommended
+usage:</p>
+
+<blockquote>
+
+<em>Recommended for males and females with Condition Y, but not
+recommended for people with Condition Y.</em></blockquote>
+
+
+<p>
+As the fine print on the label goes on to explain:</p>
+
+<blockquote>
+
+<em>clinical trials using FIXIT-Y showed a higher percentage of
+recoveries from Y when men took it compared with the men who took
+placebos, and similarly for women. But the group taking placebos in
+the total population had higher recovery rates overall. You can trust
+FIXIT to deliver evidence based pharmachology.</em></blockquote>
+
+<p>
+The company also markets FIXIT-Z-capsuls. The label on these carry
+the advice that Z-capsuls are recommended for people who suffer from
+Z, but not for males and not for females. As the fine print on the
+label goes on to explain:</p>
+
+<blockquote>
+<em> Clinical trials using FIXIT-Z showed that people taking it had
+higher recovery rates compared with those who took placebos. But both
+males and females who took placebos had higher recovery rates compared
+with the males and females who took FIXIT-Z. You can trust FIXIT to
+deliver evidence based pharmachology.</em></blockquote>
+
+</div>
+
+<p>
+While no capsul can be good for men and women, yet bad for people, or
+good for people while being bad for men and women, the imagined data
+(see below) on which FIXIT based its recommendations exhibit patterns
+that are both arithmetically possible and turn up in actual data sets.
+While there is nothing paradoxical about the existence of such data
+from the standpoint of arithmetic, they do pose problems for practical
+decision making (e.g., would you want to be treated with Fixit&rsquo;s
+capsuls in light of the reported clinical trials?), for heuristics
+used in intuitive reasoning about probabilities, for inferences from
+data to causal relations, and more generally, for philosophical
+programs that aim to eliminate or reduce causation to regularities and
+relations between probabilities.</p>
+
+<p>
+The arithmetic, on which examples like FIXIT&rsquo;s ill-judged
+recommendations are based, is unproblematic. In summary it is based
+on the fact that</p>
+
+<p class="indent">
+An association between a pair of variables can consistently be
+inverted in each subpopulation of a population when the population is
+partitioned, and conversely, associations in each subpopulation can be
+inverted when data are aggregated.</p>
+
+<p>
+
+Call this principle Simpson&rsquo;s Reversal of Inequalities. Failure to
+recognise such reversals can lead to the abovementioned pitfalls about
+what to do, what to believe, what to infer, and what causes what.
+Even when actual and possible reversals are recognized, pitfalls
+remain. On a positive note, once the possibilities of Simpson&rsquo;s
+Reversals are recognized, they provide a rich resource for
+constructing causal models that help to explain many facts that appear
+at first to be anomolous. Moreover, there is a test called the
+&ldquo;back-door criterion&rdquo; (Pearl 1993) which can be used to help
+resolve the question of whether one should base a decision on the
+statistics from the aggregate population or from the partitioned
+subpopulations.</p>
+
+<p>
+
+Section 1 provides a brief history of Simpson&rsquo;s Paradox, a statement
+and diagnosis of the arithmetical structures that give rise to it, and
+the boundary conditions for its occurrence. Section 2 examines
+patterns of invalid reasoning that have their sources in Simpson&rsquo;s
+Paradox and possible ways of countering its effects. A particularly
+important case where Simpson&rsquo;s Paradox has been invalidly employed is
+discussed in Section 3. It has been mooted that paradoxical data
+provide counter-examples to the Sure Thing Principle in theories of
+rational choice. Why such data appear to provide counter-examples to
+the Sure Thing Principle is explained, and the appearance that they do
+so is dispelled. Section 4 discusses the roles and implications of
+paradoxical data for theories of causal inference and for analyses of
+causal relations in terms of probabilities. While the conclusions of
+this section are largely negative, Section 5 illustrates how
+apparently paradoxical data can support causal models for the
+evolution of traits that at first appear to be incompatible with a
+setting in which natural selection disadvantages individuals that
+exhibit the traits.</p>
+
+</div>
+
+<div id="toc">
+<!--Entry Contents-->
+<ul>
+<li><a href="#SimpParaHistDiagBounCond">1. Simpson&rsquo;s Paradox: Its History, Diagnosis, and Boundary Conditions</a>
+ <ul>
+ <li><a href="#Hist">1.1 History</a></li>
+ <li><a href="#WhatSimpParaDiag">1.2 What is Simpson&rsquo;s Paradox: A Diagnosis</a></li>
+ <li><a href="#BounCondForSimpReve">1.3 Boundary Conditions for Simpson&rsquo;s Reversals</a></li>
+ </ul></li>
+<li><a href="#SimpReveIneqSourInvaReas">2. Simpson&rsquo;s Reversals of Inequalities as Sources of Invalid Reasoning</a></li>
+<li><a href="#DoParaDataProvCounExamSureThinPrin">3. Do Paradoxical Data Provide Counter-examples to the Sure Thing Principle?</a></li>
+<li><a href="#SimpReveIneqCorrCaus">4. Simpson&rsquo;s Reversals of Inequalities, Correlations, and Causation</a></li>
+<li><a href="#SimpReveIneqEvolSett">5. Simpson&rsquo;s Reversal of Inequalities in Evolutionary Settings</a></li>
+<li><a href="#Bib">Bibliography</a></li>
+<li><a href="#Aca">Academic Tools</a></li>
+<li><a href="#Oth">Other Internet Resources</a></li>
+<li><a href="#Rel">Related Entries</a></li>
+</ul>
+<!--Entry Contents-->
+
+<hr />
+
+</div>
+
+<div id="main-text">
+
+<h2 id="SimpParaHistDiagBounCond">1. Simpson&rsquo;s Paradox: Its History, Diagnosis, and Boundary Conditions</h2>
+
+<h3 id="Hist">1.1 History</h3>
+
+<p>
+
+In a seminal paper published in 1951, E. H. Simpson drew attention to
+a simple fact about fractions that has a wide variety of surprising
+applications (Simpson 1951). The applications arise from the close
+connections between proportions, percentages, probabilities, and their
+representations as fractions. While statisticians in the early 20th
+Century had known of the problems for statistics to which Simpson drew
+attention, it was his witty and surprising illustrations of them that
+earned them the title of being paradoxical (cf. Yule 1903). In 1934,
+Morris Cohen and Ernst Nagel introduced philosophers to one aspect of
+the problems posed by paradoxical data. They cited actual death rates
+in 1910 from tuberculosis in Richmond, Virginia and New York, New
+York that verified the following propositions (Cohen &amp;
+Nagel
+ 1934):<sup>[<a href="notes.html#note-1" id="ref-1">1</a>]</sup></p>
+ 
+<blockquote>
+<p>
+
+The death rate for African Americans was <em>lower</em> in Richmond
+than in New York.</p>
+
+<p>
+
+The death rate for Caucasians was <em>lower</em> in Richmond than in
+New York.</p>
+
+<p>
+
+The death rate for the total combined population of African
+Americans and Caucasians was <em>higher</em> in Richmond than in New
+York.</p>
+</blockquote>
+
+<p>
+
+They next posed two questions about the data concerning mortality
+rates: &ldquo;Does it follow that tuberculosis <em>caused</em> [italics
+added] a greater mortality in Richmond than in New York&hellip;&rdquo; and
+&ldquo;&hellip;are the two populations that are compared really
+<em>comparable</em>, that is, homogeneous?&rdquo; (Cohen &amp; Nagel 1934).
+After posing the questions, they left it as an exercise for the reader
+to answer them. Following the publication of Simpson&rsquo;s paper,
+statisticians initiated a lively debate about the significance of facts
+like those that are verified by the tables Cohen and Nagel cited. The
+debate sought constraints on statistical practice that would avoid
+conundrums arising from actual and possible paradoxical data. However,
+this debate did not address the first question posed by Cohen and Nagel
+concerning causal inference. As Judea Pearl notes in his survey of the
+statistical literature on Simpson&rsquo;s paradox, statisticians had an
+aversion to talk of causal relations and causal inference that was
+based on the belief that the concept of causation was unsuited to and
+unnecessary for scientific methods of inquiry and theory construction
+(Pearl 2000, 173&ndash;181).</p>
+
+<p>
+
+Philosophical interest in Simpson&rsquo;s paradox was rekindled by Nancy
+Cartwright&rsquo;s use of it in support of her claims that appeals to causal
+laws and causal capacities are required by scientific inquiry and by
+theories of rational choice (Cartwright 1979). She aimed to show that
+reliance on regularities and frequencies on which probability judgments
+can be based are not sufficient for representing causal relations. In
+particular, tests of scientific theories and philosophical analyses of
+causation and causal inference need to provide answers to questions
+like those posed by Cohen and Nagel: e.g., is it possible that
+tuberculosis caused greater mortality in Richmond than New York even if
+the mortality rates for each sub-population classified by race appears
+to suggest otherwise? If causal relations track regularities, what
+system of causal relations can achieve such effects? Once
+representations of causal relations that provide answers to questions
+like those posed by Cohen and Nagel are at hand, the representations
+turn out to have interpretations that provide causal models for a range
+of interesting and puzzling phenomena. These include causal models for
+the evolution of altruism as a stable trait in a population even though
+altruistic acts disadvantage those who perform them and advantage their
+competitors. (See Sober 1993, and Sober &amp; Wilson 1998, which
+develop these themes in detail in the areas of population biology and
+sociobiology.) Examples of such models are formulated and discussed in
+Section 5.</p>
+
+<h3 id="WhatSimpParaDiag">1.2 What is Simpson&rsquo;s Paradox: A Diagnosis</h3>
+
+<p>
+
+For some whole numbers we may have:</p>
+
+\[\begin{align}
+a/b &amp;\lt A/B, \\
+c/d &amp;\lt C/D, \text{ and}\\
+(a + c)/(b + d) &amp;\gt (A + C)/(B + D).
+\end{align}\]
+
+<p>
+
+Call this a <em>Simpson&rsquo;s Reversal</em> <em>of Inequalities</em>.
+Below is an instructive illustration. The arithmetical inequalities on which
+it is based are:</p>
+
+\[\begin{align}
+1/5 &amp;\lt 2/8 \\
+6/8 &amp;\lt 4/5 \\
+7/13 &amp;\gt 6/13. 
+\end{align}\]
+
+<p>
+
+The following interpretation of the structure illustrates why it can
+give rise to perplexity. The example is loosely based on a
+discrimination suit that was brought against the University of
+California, Berkeley (see Bickle <em>et al</em>., 1975).</p>
+
+<blockquote>
+<p>
+
+Suppose that a University is trying to discriminate in favour of
+women when hiring staff. It advertises positions in the Department of
+History and in the Department of Geography, and only those departments.
+Five men apply for the positions in History and one is hired, and eight
+women apply and two are hired. The success rate for men is twenty
+percent, and the success rate for women is twenty-five percent. The
+History Department has favoured women over men. In the Geography
+Department eight men apply and six are hired, and five women apply and
+four are hired. The success rate for men is seventy-five percent and
+for women it is eighty percent. The Geography Department has favoured
+women over men. Yet across the University as a whole 13 men and 13
+women applied for jobs, and 7 men and 6 women were hired. The success
+rate for male applicants is greater than the success rate for female
+applicants.</p>
+
+<table class="centered cellpad-med-dense cell-center">
+<tr>
+<td>&nbsp;</td>
+<td>Men</td>
+<td>&nbsp;</td>
+<td>Women</td>
+</tr>
+
+<tr>
+<td>History</td>
+<td>1/5</td>
+<td>\(\lt\)</td>
+<td>2/8</td>
+</tr>
+
+<tr>
+<td>Geography</td>
+<td>6/8</td>
+<td>\(\lt\)</td>
+<td>4/5</td>
+</tr>
+
+<tr>
+<td>University</td>
+<td>7/13</td>
+<td>\(\gt\)</td>
+<td>6/13</td>
+</tr>
+</table>
+</blockquote>
+
+<p>
+
+How can it be that each Department favours women applicants, and yet
+overall men fare better than women? There is a &lsquo;bias in the
+sampling&rsquo;, but it is not easy to see exactly where this bias
+arises. There were 13 male and 13 female applicants: equal sample sizes
+for both groups. Geography and History had 13 applicants each: equal
+sample sizes again. Nor does the trouble lie in the fact that the
+samples are small: multiply all the numbers by 1000 and the puzzle
+remains. Then the reversal of inequalities becomes fairly robust: you
+can add or subtract quite a few from each of those thousands without
+disturbing the Simpson&rsquo;s Reversal.</p>
+
+<p>
+
+The key to this puzzling example lies in the fact that <em>more
+women are applying for jobs that are harder to get</em>. It is harder
+to make your way into History than into Geography. (To get into
+Geography you just have to be born; to get into History you have to do
+something memorable.) Of the women applying for jobs, more are applying
+for jobs in History than in Geography, and the reverse is true for men.
+History hired only 3 out of 13 applicants, whereas Geography hired 10
+out of 13 applicants. Hence the success rate was much higher in
+Geography, where there were more male applicants.</p>
+
+<h3 id="BounCondForSimpReve">1.3 Boundary Conditions for Simpson&rsquo;s Reversals</h3>
+
+<p>
+
+Simpson&rsquo;s Reversal of Inequalities occurs for a wide range of
+values that can be substituted for \(a\), \(b\), \(c\), \(d\), \(A\),
+\(B\), \(C\), \(D\) in the above schema. The values fall within a
+broad band that lies between two extremes: </p>
+
+<p>
+
+On one extreme, <em>slightly</em> more women are applying for jobs
+that are <em>much</em> harder to get.</p>
+
+<table class="centered cellpad-med-dense cell-center">
+<tr>
+<td>&nbsp;</td>
+<td>Men</td>
+<td>&nbsp;</td>
+<td>Women</td>
+</tr>
+
+<tr>
+<td>History</td>
+<td>1/45</td>
+<td>\(\lt\)</td>
+<td>5/55</td>
+</tr>
+
+<tr>
+<td>Geography</td>
+<td>50/55</td>
+<td>\(\lt\)</td>
+<td>45/45</td>
+</tr>
+
+<tr>
+<td>University</td>
+<td>51/100</td>
+<td>\(\gt\)</td>
+<td>50/100</td>
+</tr>
+</table>
+
+<p>
+
+On the other extreme, <em>many</em> more women are applying for jobs
+that are <em>slightly</em> harder to get.</p>
+
+<table class="centered cellpad-med-dense cell-center">
+<tr>
+<td>&nbsp;</td>
+<td>Men</td>
+<td>&nbsp;</td>
+<td>Women</td>
+</tr>
+
+<tr>
+<td>History</td>
+<td>4/5</td>
+<td>\(\lt\)</td>
+<td>90/95</td>
+</tr>
+
+<tr>
+<td>Geography</td>
+<td>94/95</td>
+<td>\(\lt\)</td>
+<td>5/5</td>
+</tr>
+
+<tr>
+<td>University</td>
+<td>98/100</td>
+<td>\(\gt\)</td>
+<td>95/100</td>
+</tr>
+</table>
+
+<p>
+
+Further, the numerators and denominators of fractions that
+instantiate the schematic pattern can be uniformly multiplied by any
+positive number without perturbing the relations between the fractions.
+Fractions that exhibit these patterns correspond to percentages and
+probabilities. In their probabilistic form, Colin Blyth provides the
+following boundary conditions for Simpson&rsquo;s Reversals (Blyth 1972). Let
+&lsquo;\(P\)&rsquo; represent a probability function, and take conditional
+probabilities to be ratios of unconditional probabilities in accordance
+with their orthodox definition; i.e., reading the &lsquo;/&rsquo; in
+the context \(P(-\mid\ldots)\) as &lsquo;given that&rsquo;,</p>
+
+\[
+P(A\mid B) = P(A \amp B)/P(B), \text{ provided that } P(B) \text{ is positive.}
+\]
+
+<p>
+
+Blyth notes that from a mathematical standpoint, subject to the
+conditions</p>
+
+\[\begin{align}
+P(A\mid B\amp C) &amp;\ge \delta \cdot P(A\mid {\sim}B\amp C) \\
+P(A\mid B\amp {\sim}C) &amp;\ge \delta \cdot P(A\mid {\sim}B\amp {\sim}C)
+\end{align}\]
+
+<p>
+
+with \(\delta \ge 1\), it is possible to have</p>
+
+\[
+P(A\mid B) \approx 0 \text{ and } P(A\mid {\sim}B) \approx 1/\delta .
+\]
+
+
+<p>
+
+On the assumption that the propositions of arithmetic are necessary,
+these possibilities are tantamount to existence conditions in
+arithmetic. The schema:</p>
+
+<p class="center">
+ [If it is possible that \(A\) is necessary, then \(A\)]
+</p>
+
+<p>
+is valid in a large family of modal logics. The boundary conditions
+for Simpson&rsquo;s Reversals allow that any probabilistic association
+between \(A\) and \(B\) can be inverted in some further partition of
+\(B\). From the standpoint of arithmetic there is a partition
+\(\{\)C,\({\sim}\)C\(\}\) within which associations between \(A\) and
+\(B\) are inverted. An important related consequence is that it is
+always mathematically possible to provide some condition or factor
+\(C\) that renders \(A\) probabilistically independent of \(B\) when
+\(C\) is conjoined with \(B\) as a condition on \(A\) and with
+\({\sim}B\) as a condition on \(A\). These facts of arithmetic carry no
+empirical significance by themselves. However, they do have
+methodological significance insofar as substantive empirical
+assumptions are required to identify salient partitions for making
+inferences from statistical and probability relationships.</p>
+
+<p>
+The need for substantive empirical assumptions arises in settings
+where there are instances of arithmetical possibilities that are
+marked out by Simpson&rsquo;s Reversals in urn models and in possible
+and actual empirical settings. For example, consider an urn model for
+our story about the success rates for job applicants. The model
+consists of twenty-six balls. Each ball is labeled with one of the
+elements from the sets \(\{M, {\sim}M\}, \{H, {\sim}H\}\), and \(\{S,
+{\sim}S\}\), e.g., a given ball might be labeled \([{\sim}M, H,
+{\sim}S]\) Assume that the labels are distributed to correspond to the
+distributions of job applicants. In trials of drawing balls from the
+urn with replacement, the associations between the \(M\)&rsquo;s,
+\(H\)&rsquo;s, and \(S\)&rsquo;s in the sub-populations, and the
+reverse association between \(M\)&rsquo;s and \(S\)&rsquo;s in the
+overall population, are resilient. The resilient associations are due
+only to the structure of the model and do not have any causal
+significance. By way of contrast, substantive assumptions are required
+to draw inferences in other cases.</p>
+
+<p>
+
+Patterns in data that fall within the boundary conditions for
+Simpson&rsquo;s Reversals of Inequalities can raise problems for testing and
+evaluating empirical hypotheses, e.g., testing the effectiveness and
+safety of medical procedures. A course of treatment for a malady that
+affects the staff of History and Geography can be correlated with a
+<em>lower</em> death rate for treated compared with untreated patients
+in History, and a <em>lower</em> death rate for treated compared with
+untreated patients in Geography; yet, the course of treatment may
+nevertheless correlate with a <em>higher</em> death rate when treated
+patients are compared with untreated patients overall. Conversely, a
+treatment can be correlated with higher mortality rates in each
+sub-population, while it is correlated with a lower mortality rate in
+the total population. In such cases it is far from clear what, if
+anything, to conclude from the correlations about the effectiveness and
+safety of the
+ treatment.<sup>[<a href="notes.html#note-2" id="ref-2">2</a>]</sup>
+ Moreover, with patterns like those surmised
+for this example, different ways of partitioning the <em>same</em> data
+can produce different correlations that appear to be incompatible with
+the correlations under the initial way of partitioning the data. E.g.,
+under a partition by academic discipline, patients appear to fare worse
+when treated, even though there can be a positive correlation in the
+total population between treatments and recoveries. This is consistent
+with a positive correlation between treatments and recoveries when the
+population is partitioned by gender. While Historians and Geographers
+each fare worse given the treatment, males and females from the two
+Departments can each fare better given the treatment, and these facts
+are consistent with the combined population faring better, or with the
+combined population faring
+ worse.<sup>[<a href="notes.html#note-3" id="ref-3">3</a>]</sup></p>
+
+<p>
+
+The aforementioned possibilities are due to the fact that the
+following formulae are collectively consistent. Take &lsquo;\(P\)&rsquo;
+to be a probability function. Probability models can be provided that
+verify the consistency of the set consisting of the following
+formulae:</p>
+
+\[\begin{align}
+P(A\mid B) &amp;\gt P(A\mid {\sim}B) \\
+P(A\mid B \amp C) &amp;\lt P(A\mid {\sim}B \amp C) \\
+P(A\mid B \amp {\sim}C) &amp;\lt P(A\mid {\sim}B \amp {\sim}C) \\
+P(A\mid B \amp D) &amp;\gt P(A\mid {\sim}B \amp D) \\
+P(A\mid B \amp {\sim}D) &amp;\gt P(A\mid {\sim}B \amp {\sim}D) \\
+\end{align}\]
+
+<p>
+
+Similar inequalities are possible with signs reversed, and
+equalities that represent probabilistic independence are consistent
+with positive and/or negative associations in partitions of the
+populations. These facts are not paradoxical from an arithmetical point
+of view. However, regularities that can be represented by them cannot
+all be assigned causal significance, and probabilistic equalities that
+are sufficient for probabilistic independence cannot all be taken to
+represent causal independence.</p> 
+
+<p>
+
+Standard statistical methods for significance testing offer no
+insurance against conflicting results when data are partitioned or
+consolidated. In a setting where the effectiveness of a new medical
+treatment is under test, the following data support rejecting the null
+hypothesis, at the .05 level, that treatment \(T\) makes no difference
+to recovery \(R\), where the alternative to the null hypothesis is that
+treatment is <em>favorable</em> for
+ recovery.<sup>[<a href="notes.html#note-4" id="ref-4">4</a>]</sup></p>
+
+<table class="centered cellpad-med-dense cell-right">
+<tr><td></td><td>\(R\)</td><td>\({\sim}R\)</td></tr>
+<tr><td>\(T\)</td><td>369</td><td>340</td></tr>
+<tr><td>\({\sim}T\)</td><td>152</td><td>176</td></tr>
+</table>
+
+<p>However, in this model, when the population is further partitioned
+by gender, the opposite recommendation for males and for females is
+supported at the .05 level of significance.</p>
+
+<table class="centered cellpad-med-dense cell-right">
+<tr><td></td><td>\(RM\)</td><td>\({\sim}RM\)</td><td>\(R{\sim}M\)</td><td>\({\sim}R{\sim}M\)</td></tr>
+<tr>
+<td>\(T\)</td>
+<td>48</td>
+<td>152</td>
+<td>321</td>
+<td>188</td></tr>
+
+<tr><td>\({\sim}T\)</td>
+<td>73</td>
+<td>145</td>
+<td>79</td>
+<td>31</td></tr>
+</table>
+
+<p>
+
+Take the null hypothesis to be that there is no association between
+treatments and recoveries, and the alternative to the null hypothesis
+that treatment is <em>less favorable</em> for recovery than no
+treatment. Rejecting the null hypothesis falls within the .05 level of
+significance for both the \(M\)-tables and the \({\sim}M\)-tables. So,
+when the consolidated data are considered, treatment is favored, but
+when the population is partitioned by gender, no treatment is favored
+for both males and females. A further partition, e.g., a partition by
+age groups, can reverse the associations within partitions by
+gender. So treatments can be positively correlated with recoveries in
+the total population, negatively correlated with recoveries when the
+population is partitioned by gender, and positively correlated with
+recoveries when the population is partitioned by age. The generality
+of the boundary conditions for Simpson&rsquo;s reversals of
+inequalities guarantees that there always are models in arithmetic
+that accomodate data and support conflicting
+recommendations. Arithmetic is silent on which partitions to take as
+the basis for evaluating conflicts between hypotheses given data and
+the ways data can be partitioned.</p>
+
+<h2 id="SimpReveIneqSourInvaReas">2. Simpson&rsquo;s Reversals of Inequalities as Sources of Invalid Reasoning</h2>
+
+<p>
+
+Intuitive reasoning about percentages and probability relations is
+notoriously accident prone. The example that was based on the suit
+brought against Berkeley illustrated how a bias in hiring practices in
+each department of a university can be inverted when the data are
+pooled. But many people at least initially would deem it impossible
+that a higher percentage of males were successful in a setting where
+females had higher success rates in each department in which
+appointments were made. One way to view the flaw in intuitive
+reasoning that arises from Simpson&rsquo;s Reversals is by noting that the
+representation of data from partitions of a population as fractions
+and the uses to which the fractions are put when data are pooled to
+get statistics on total populations is not guaranteed to maintain the
+relations between fractions within the partitions. Proper fractions
+have infinitely many equivalent representations. For example, 1/\(2 =
+2/4 = 4/8 =\ldots\). Now recall the form of relations between
+fractions in terms of which Simpson&rsquo;s Reversals were illustrated,
+i.e.,</p>
+
+\[\begin{align}
+a/b &amp;\lt A/B, \\
+c/d &amp;\lt C/D, \text{ and}\\
+(a + c)/(b + d) &amp;\gt (A + C)/(B + D).
+\end{align}\]
+
+<p>
+
+Now, treating terms as proper fractions, we can have \(a/b = 2a/2b\),
+and \(A/B = 5A/5B\); \(c/d = 3c/3d\), and \(C/D = 4C/4D\). However,
+when these equivalent representations are pooled, the resulting
+relations between fractions will often differ from the original
+relations. E.g., \((2a + 3c)/(2b + 3d)\) can be more or less than
+\((a + c)/(b + d)\). Hence, it is invalid to conclude that relations
+between percentages or ratios when data are pooled will conform to the
+regularities that are exhibited by the sets that comprise partitions
+of the data. Equivalent representations of ratios make different
+contributions when data are pooled.</p>
+
+<p>
+
+One way to arithmetically counter this difficulty is by
+&lsquo;normalizing&rsquo; the representations of data from
+sub-populations and only pooling the normalized representations of the
+data. Normalizing data counters the effects of skewing by providing
+constant denominators for the fractions that represent the data, and by
+representing the sub-populations that are compared as if they were of
+equal sizes in the relevant respects in terms of which they are
+compared. However, Simpson&rsquo;s Reversals show that there are numerous
+ways of partitioning a population that are consistent with associations
+in the total population. A partition by gender might indicate that both
+males and females fared worse when provided with a new treatment, while
+a partition of the same population by age indicated that patients under
+fifty, and patients fifty and older both fared better given the new
+treatment. Normalizing data from different ways of partitioning the
+same population will provide incompatible conclusions about the
+associations that hold in the total population.</p>
+
+<p>
+
+A related point comes out even more vividly when fractions are
+interpreted as probabilities. It was noted above that a Simpson&rsquo;s
+Reversal can take the following probabilistic form: It is possible to
+have</p>
+
+\[\begin{align}
+P(A\mid B) &amp;\gt P(A\mid {\sim}B), \text{ where} \\
+(A\mid B \amp C) &amp;\lt P(A\mid {\sim}B \amp C) \text{ and}\\
+P(A\mid B \amp {\sim}C) &amp;\lt P({\sim}B \amp {\sim}C).
+\end{align}\]
+
+<p>
+
+One way for intuitive reasoning to overlook this possibility is by
+overlooking the so-called law of total probability and its relevance
+to this setting. From the probability calculus we have the following
+equivalences that represent probabilities as weighted averages.</p>
+
+\[\begin{align}
+P(A\mid B) &amp;= P(A\mid B \amp C)P(B\mid C) + P(A\mid B \amp {\sim}C)P(B\mid {\sim}C) \\
+P(A\mid {\sim}B) &amp;= P(A\mid {\sim}B \amp C)P({\sim}B\mid C) + P(A\mid {\sim}B \amp {\sim}C)P({\sim}B \mid {\sim}C)
+\end{align}\]
+
+
+<p>
+
+Skewed weights for \(P(B\mid C)\), \(P(B\mid {\sim}C)\),
+\(P({\sim}B\mid C)\), and \(P({\sim}B\mid {\sim}C)\) create the range
+of possibilities that are marked out by the boundary conditions for
+Simpson&rsquo;s Reversals. E.g., let</p>
+
+\[\begin{align}
+P(A\mid B) &amp;= .54 \text{ and} \\
+P(A\mid {\sim}B) &amp;= .44
+\end{align}\]
+
+<p>
+So, \(B\) is positively relevant to \(A\). Let the weights that
+feature in the representation of these probabilities in terms of a
+factor \(C\) be as follows:</p>
+
+\[\begin{align}
+P(B\mid C) &amp;= .28, \\
+P({\sim}B\mid C) &amp;= .72, \\
+P(B\mid {\sim}C) &amp;= .66, \text{ and} \\
+P({\sim}B\mid {\sim}C) &amp;= .34
+\end{align}\]
+
+<p>
+
+Given these weightings, \(B\) will be positively relevant to
+\(A\), but it will be negatively relevant to \(A\) in each of the
+cells provided by the partition \(\{C, {\sim}C\}\). 
+ I.e.,<sup>[<a href="notes.html#note-5" id="ref-5">5</a>]</sup></p>
+
+\[\begin{align}
+P(A\mid B\amp C) &amp;= .27, \\
+P(A\mid B\amp{\sim}C) &amp;= .33, \\
+P(A\mid {\sim}B\amp C) &amp;= .64, \text{ and} \\
+P(A\mid {\sim}B \amp {\sim}C) &amp;= .66
+\end{align}\]
+
+<p>
+If intuitive reasoners generally ignore the roles that weights play or
+fail to play in their reasoning about probability, they are apt to be
+taken aback when Simpson&rsquo;s Reversals turn up in actual or possible
+data. A disposition to ignore weightings in intuitive reasoning could
+arise from ignorance, habit, or as a defeasible heuristic when
+reasoning about probability relations. Of course it is an empirical
+question whether such oversight is the source of invalid reasoning, or
+whether another hypothesis better explains why many people find
+Simpson&rsquo;s Reversals to be impossible at first, and why the reversals
+continue to be surprising even after their source has been explained
+to them.</p>
+
+
+<h2 id="DoParaDataProvCounExamSureThinPrin">3. Do Paradoxical Data Provide Counter-examples to the Sure Thing Principle?</h2>
+
+<p>
+
+The so-called Sure Thing Principle (hereafter STP) is fundamental
+for theories of rational decision. L. J. Savage provides the following
+formulation of it:</p>
+
+<blockquote>
+If you would definitely prefer \(g\) to \(f\), either knowing that the
+event \(C\) obtained, or knowing that the event \(C\) did not obtain,
+then you definitely prefer \(g\) to \(f\) (Savage 1954,
+21&ndash;2).
+</blockquote>
+
+<p>
+
+In theories of rational choice in which preferences are ordered by
+the rule of maximizing expected utility, STP is a consequence of the
+fact that the expected utility of an option can be represented as a
+probabilistically weighted average of the expected utilities of
+mutually exclusive and collectively exhaustive ways the world could be
+on the assumption that the option is chosen. E.g., with
+&lsquo;EU&rsquo; representing a function that assigns expected
+utilities and &lsquo;P&rsquo; a probability function,</p>
+
+\[
+EU(A) = EU(A\amp B)P(B) + EU(A\amp {\sim}B) P({\sim}B).
+\]
+
+<p>
+
+When you know that \(B\) holds, it becomes a parameter for the
+expected utility of \(A\), and similarly when you know that
+\({\sim}B\) holds. So if the expected value that is assigned to \(C\)
+is less than \(A\) on the assumption you know that \(B\) obtains, and
+similary on the assumption that \(B\) does not obtain, then the
+expected value of \(C\) is unconditionally less than the expected
+value of \(A\).</p>
+
+<p>
+
+Now suppose that you are offered bets on applicants gaining jobs in
+the example concerning the two departments. Your options are to bet on
+a randomly drawn successful applicant being male, or to bet on a
+randomly drawn successful applicant being female. Let \(C\) be the
+event of applying for a job in History, and \({\sim}C\) be the event
+of applying for a job in Geography. (Every person in the relevant
+domain applies for exactly one position.) Given that the success rates
+for females were greater than that for males in both departments, does
+the STP recommend that you should back females as the bettor&rsquo;s
+choice? One might (invalidly) reason as follows: given that females
+have a greater chance of success in their applications given \(C\) and
+given \({\sim}C\), STP recommends a preference for bets on females in
+a lottery in which you are betting on the gender of successful
+applicants. Of course, this would be bad advice in the setting of the
+example, as the success rate for males was greater overall. Given a
+suitably large number of bets, a clever bookie could be assured of a
+handsome profit if bettors backed females in the competitions for
+jobs. Their success rate was lower than their male competitors&rsquo;
+success rate overall despite being higher in each department.</p>
+
+<p>
+
+To see what has gone awry in the attempt to apply STP in this
+setting it suffices to note that a random draw from successful
+applicants is made from the <em>mixture</em> that contains males and
+females, and there are more males in the mixture. (Recall that females
+were applying in greater numbers for jobs that were harder to get.) It
+is insufficient for the applicability of the Principle that
+probabilities line up with females having a greater chance of success
+in each department. The Principle applies to <em>preferences</em> ,
+taken as weighted averages of utilities with probabilities supplying
+the weights. The presented options are</p>
+
+<ul class="sentag tag3em">
+<li><span class="tag">(1)</span>
+<span class="sen">A randomly drawn successful applicant is female.</span>
+</li>
+
+<li><span class="tag">(2)</span>
+<span class="sen">A randomly drawn successful applicant is male.</span>
+</li>
+</ul>
+
+<p>
+
+To be told that a selected applicant applied for a position in
+History (C) or in Geography \(({\sim}\)C) does not affect the probabilities of
+success in the mixture. This is evident when the expected utilities of
+the options are explicitly represented as weighted averages. Using
+&lsquo;M&rsquo; for male, &lsquo;\({\sim}\)M&rsquo; for female, &lsquo;S&rsquo;
+for successful, and &lsquo;C&rsquo; and &lsquo;\({\sim}\)C&rsquo; as above, the
+expected utilities for the options are as follows.</p>
+
+\[\begin{align*}\tag{1}
+EU({\sim}M\amp S) &amp;= EU({\sim}M\amp S\amp C)P(C\mid S\amp {\sim}M) \\
+ &amp;\quad + EU({\sim}M\amp S\amp {\sim}C) P({\sim}C \mid S\amp {\sim}M) \\
+
+\tag{2}
+EU(M\amp S) &amp;= EU(M\amp S\amp C)P(C\mid S\amp M) \\
+ &amp; \quad + EU(M\amp S\amp {\sim}C) P({\sim}C\mid S\amp M)
+\end{align*}\]
+
+<p>
+
+Given the figures that were used in the example, the probability
+relations between the weightings are as follows:</p>
+
+\[\begin{align}
+P(C\mid S\amp {\sim}M) &amp;\gt P(C\mid S\amp M) \text{ and }\\
+P({\sim}C\mid S\amp {\sim}M) &amp;\gt P({\sim}C\mid S\amp M).
+\end{align}\]
+
+<p>
+
+It is these relations that are the source of the illusion that STP
+selects Option 1. The probability of a successful female applicant
+having applied for a position in History is greater than that of her
+male competitor among the applicants in History, and similarly for
+females in Geography. If the candidates had been sorted by their
+applications to the respective departments, where females had higher
+success rates, and the drawing was done from a randomly chosen
+department (with repeated draws and replacement until a successful
+applicant is drawn) rather than from the mixture of successful
+applicants, then the best choice would be for the gender with the
+higher success rates in the respective departments, i.e.,
+females. Such an arrangement would not be affected by the fact that
+more women applied for jobs that were harder to get. But that is not
+the arrangement that has been stipulated for the bets where selection
+is made from the pooled successful applicants. The chances of
+selecting a male (or a female) from <em>that</em> mixture are
+independent of the department to which the successful applicants had
+applied. Accordingly, rational bettors will find STP to be
+inapplicable in the setting, because they will not have the
+preferences that its application requires, i.e., a preference for
+females, given that they applied for a job in History (C), and a
+preference for females, given that they applied for a job in Geography
+\(({\sim}C)\). For rational bettors,</p>
+
+\[\begin{align}
+EU({\sim}M\amp S) &amp;= EU({\sim}M\amp S\amp C) \\
+  &amp;= EU({\sim}M\amp S\amp {\sim}C),
+\end{align}\]
+
+<p>
+and similarly for \(M\)&rsquo;s, while, on the figures provided in the
+example,</p>
+
+\[
+EU({\sim}M\amp S) \lt EU(M\amp S).
+\]
+
+<p>
+While Simpson&rsquo;s Reversals do not support decisions that conflict with
+the Sure Thing Principle, they do pose problems of practical
+significance when decisions have to be taken about what to do. Should
+the associations in the total population of people guide decision
+making in a trial like that conducted by Fixit? Or should the
+associations in the subpopulations of males and females guide
+decisions about whether to take the medication? Recall that a
+different partition of the total population, e.g. by age, can exhibit
+associations like those in the total population, and the reverse of
+those in the partition based on gender. There are no a priori methods
+that answer questions about whether associations in aggregated data,
+or associations in partitions of aggregated data, are good bases for
+inference from causes to effects or for making decisions about what to
+do. Contingent hypotheses about the logical and causal structure of
+particular practical problems best serve as the decision maker&rsquo;s
+guide. Given appropriate background information, the relations
+between, e.g. treatments and recoveries in the total population, might
+be the indicated basis for making treatment decisions. Given
+different background information, the relations between treatments and
+recoveries in a salient partition of the population may be idicated,
+contra the associations in the total population. In the absence of
+some contingent assumptions about logical and causal structures in
+particular cases, mere associations are not helpful in deciding what
+to do. So, while Simpson&rsquo;s Reversals are not paradoxical from a
+logical point of view, they do point to conflicting associations that
+become genuinely paradoxical if they are all given causal
+significance.</p>
+
+<h2 id="SimpReveIneqCorrCaus">4. Simpson&rsquo;s Reversals of Inequalities, Correlations, and Causation</h2>
+
+<p>
+
+It is a commonplace that correlations between variables do not
+entail that they stand in causal relations. While some correlations are
+purely accidental, others can be lawful even when no causal connection
+obtains between the correlated variables&mdash;e.g., the correlation
+between falling barometers and rain is lawful because they are joint
+effects of a common cause, i.e., falling air pressure. Controlled
+experiments seek to expose correlations that are merely accidental.
+What then of robust correlations between variables that do not causally
+interact? Hans Reichenbach proposed that a robust correlation between
+variables is spurious [acausal] when there is a factor that
+&lsquo;screens off&rsquo; the correlation and serves as a common cause
+of the associated variables (Reichenbach 1971, Ch. 4). Say that \(A\) is
+associated with B if and only if they are not probabilistically
+independent, i.e., \(P(A\mid B) \ne P(A)\). Reichenbach proposed that such an
+association is spurious provided that there is a factor \(C\) such that
+\(P(A\mid B\amp C) = P(A\mid C)\).</p>
+
+<p>
+
+Simpson&rsquo;s Reversal of Inequalities illustrates that from an
+arithmetical point of view, there always is a factor or proposition \(C\)
+that &lsquo;screens off&rsquo; any correlation. The existence of such a
+factor cannot be sufficient for a correlation to be spurious. For
+example, suppose that the probability of \(A\) given \(B\) is greater than
+without \(B\). The following diagram illustrates this possibility with
+probabilities corresponding to the proportional sizes of enclosed
+spaces with all of \(A\) represented by the enclosed rectangle that is
+intersected by the line dividing \(B\) from \({\sim}B\).</p>
+
+<div class="figure">
+<img alt="missing text, please inform" src="Diagram1.gif" height="189" width="135" />
+<p class="center"><span class="figlabel">Figure 1.</span> \(P(A\mid B) \gt P(A\mid {\sim}B)\)</p>
+</div>
+
+<p>
+
+The boundary conditions for Simpson&rsquo;s Reversals guarantee that
+there is a \(C\) that intersects equal parts of \(A\amp B\) and
+\(A\amp {\sim}B\). In Section 1 it was noted that arithmetical
+possibilities are tantamount to existence conditions for arithmetical
+facts. Provided that a sample space can be partitioned sufficiently
+finely, the probabilistic relevance between \(A\) and \(B\) can be
+&ldquo;washed out&rdquo; by some arbitrary factor \(C\) within which
+the probabilities of \(A\amp B\) and \(A\amp {\sim}B\) are equal. The
+following diagram illustrates this arithmetical possibility:</p>
+
+<div class="figure">
+<img alt="missing text, please inform" src="Diagram2.gif" height="185" width="132" />
+<p class="center"><span class="figlabel">Figure 2.</span> \(P(A\mid B\amp C) = P(A\mid {\sim}B\amp C)\)</p>
+</div>
+
+<p>
+
+where \(C\) is represented by the parallelogram that is bisected by
+the boundary between \(B\) and \({\sim}B\) and comprises equal parts
+of \(A\amp B\) and \(A\amp {\sim}B\). \(C\) is an arbitrary
+proposition or factor. As enclosed spaces correspond to probabilities,
+\(P(A\mid B\amp C) = P(A\mid {\sim}B\amp C)\). So, \(C\)
+&lsquo;screens off&rsquo; \(A\) from \(B\); however, its existence is
+clearly insufficient to show that the correlation between \(A\) and
+\(B\) is spurious.  While &lsquo;screening off&rsquo; may provide a
+necessary condition for showing that a correlation between variables
+is due to a common cause, this necessary condition is guaranteed to be
+fulfilled by the underlying arithmetic of the probability
+calculus. Further substantive conditions have to be provided over and
+above the probability relations between \(A\), \(B\), and \(C\) in order to
+identify \(C\) as a common cause of \(A\) and \(B\).</p>
+
+<p>
+
+The inference that lawfully correlated variables are causally
+independent of each other if the correlation is due to a common cause
+is a special case of a more general view that causes increase the
+chances of their 
+ effects.<sup>[<a href="notes.html#note-6" id="ref-6">6</a>]</sup>
+ When there is a common cause \(C\) of a correlation between variables
+\(B\) and \(A\), \(B\) does not cause \(A\); the raising of
+\(A\)&rsquo;s chances is due to \(C\), and while \(B\) might be a
+symptom of \(A\), it is so by virtue of being a separate effect of
+\(C\) that precedes \(A\). The following diagram illustrates these
+relationships. (Arrows represent the directions of causal
+connections.)</p>
+
+<div class="figure">
+<img alt="missing text, please inform" src="Diagram3.gif" height="133" width="190" /> 
+
+<p class="center"><span class="figlabel">Figure 3.</span> 
+\(B\) precedes \(A\) and \(C\) is a common cause of \(B\) and \(A\)</p>
+</div>
+
+<p>
+
+Given \(C\), \(B\) does not raise \(A\)&rsquo;s chances. The underlying idea behind
+analyses of causation in terms of chance raising is that causes promote
+their effects. In deterministic settings, chances take only extreme
+values, and causes do not &lsquo;raise&rsquo; an effects&rsquo; chances
+of occurring except in the degenerate sense that they raise the chances
+of their effects from zero without them to one with them (excluding
+cases of deterministic overdetermination). However, it is a contingent
+matter whether the world we inhabit is deterministic or
+indeterministic, and concepts of causation need to accommodate the
+latter possibility as well as the former. Then, representations of
+deterministic causation can be viewed as a special case of
+probabilistic causation in which causes are sufficient and necessary
+for their effects.</p>
+
+<p>
+
+In view of Simpson&rsquo;s Reversals of Inequalities, probability
+relations between variables will vary widely under different partitions
+of populations or state spaces. This fact about probability relations
+provides an invaluable resource for the representation in probabilistic
+terms of the complex relations that hold between networks of causes and
+their effects. Causes not only can promote effects, but they can
+promote the absence of or inhibit effects that might occur in their
+absence. E.g., regular exercise inhibits or reduces the chances of
+cardiovascular disorders. Accordingly, whatever promotes regular
+exercise also promotes cardiovascular health even if it also promotes
+cardiovascular disease. Cartwright gives the following example. Smoking
+causes heart disease, but it also could cause smokers to take up
+exercise in greater numbers than non-smokers. In that case smoking
+could indirectly cause cardiovascular health while directly causing
+disease. With plus and minus signs indicating whether a cause promotes
+or inhibits an effect, the following diagram represents a causal set-up
+in which smoking could promote cardiovascular health while directly
+promoting disease.</p>
+
+<div class="figure">
+<img alt="missing text, please inform" src="Diagram4.gif" width="240" height="132" />
+<p class="center"><span class="figlabel">Figure 4.</span> 
+</p></div>
+
+
+<p>
+
+E.g., if smoking increases the chances of heart disease by 25%, but
+also increases the chances of regular exercise by 40% while exercise
+decreases the chances of disease by 70%, smokers will on balance
+benefit from their habit with respect to cardiovascular health. In this
+set-up, there could be a Simpson&rsquo;s Reversal where smokers who exercise
+fare worse than non-smokers who exercise, and similarly for smokers who
+do not exercise compared with non-smokers, while the smokers&rsquo;
+rates of disease are lower overall. The net causal effect of smoking on
+health is positive in the example due to the contribution of a third
+variable, exercising, that is an effect of smoking. It is the causal
+contributions of further variables that are the sources of Simpson&rsquo;s
+Reversals in other causal set-ups where the effects of direct causal
+links are modified by the additional variables&rsquo; contributions.
+These include cases where direct effects are nullified by inhibitory
+effects of an accompanying factor, e.g., substances that are separately
+poisonous, acid and alkali, can interact to have no deleterious effect
+when they are taken together. Each acts as an antidote for the
+other.<sup>[<a href="notes.html#note-7" id="ref-7">7</a>]</sup>
+ Further entanglements include cases where a
+cause that promotes an effect is accompanied by an inhibitory cause of
+the effect and they are both effects of a common cause. E.g.,</p>
+
+<div class="figure">
+<img alt="missing text, please inform" src="Diagram5.gif" width="141" height="185" />
+<p class="center"><span class="figlabel">Figure 5.</span> \(E\)&rsquo;s chance is unperturbed by \(CC\), a common cause.</p>
+</div>
+
+<p>
+
+An interpretation of this diagram: thrombosis can be an effect of
+pregnancy and it can also be an effect of some of the ingredients of
+birth control pills. Both pregnancy and the pills increase the chances
+of thrombosis. However, the pills decrease the chances of pregnancy,
+and the net effect on populations of women who take the pills could
+show no change in the frequency of thrombosis. Examples such as those
+that have been canvassed show that it is neither necessary nor
+sufficient for a causal relation between two variables that one raise
+the chances of the other. Cartwright (2001, 271) puts the matter in the
+following terms: &lsquo;Causes <em>can</em> increase the probability of
+their effects; but they need not. And for the other way around: an
+increase in probability <em>can</em> be due to a causal connection; but
+lots of other things can be responsible as well.&rsquo;</p>
+
+<p>
+
+Is Cartwright&rsquo;s observation cause for pessimism about the program of
+analyzing causation and causal relevance in probabilistic terms? Not
+necessarily. It sets a problem about causal entanglements that are not
+tracked by probability relations and probabilistic entanglements that
+are not due to causal relations. The program of providing probabilistic
+representations of causal relations needs to provide conditions that
+disentangle causal networks. What is required is a way of locating the
+<em>right</em> partitions of populations, where the right ones are the
+ones whose probability relations do track causal connections while
+holding relevant background factors fixed. A number of different
+proposals have been put forward in the literature on probabilistic
+causation that aim to provide criteria for locating the right
+partitions of data for the purpose of identifying causal
+connections.</p>
+
+<p>
+
+The proposals fall into two broad categories: (1) Reductive
+proposals: these do not appeal to causal concepts and they aim to
+provide a filter on correlations that identifies which correlations are
+spurious. Correlations that are not spurious are meant to conform to
+intuitions about causal relations and to implement the roles that are
+intuitively assigned to causal relations.<sup>[<a href="notes.html#note-8" id="ref-8">8</a>]</sup>
+ (2) Non-reductive
+proposals: these are unabashed about using causal concepts to
+distinguish between spurious and causal correlations. Proposals from
+this second group are generally skeptical about the Humean program that
+motivates reductive proposals, and set-ups that are instances of
+Simpson&rsquo;s Reversals are one of their main critical scalpels (Cartwright
+1979, and especially Dupre &amp; Cartwright 1988). Nevertheless, they
+too face the problem of providing a filter on correlations that marks
+out which of them are spurious, but they do not feel constrained to
+avoid reference to causal relations in providing criteria for selecting
+partitions that provide reliable data for causal inferences. In sum,
+both reductionists and anti-reductionists who endorse the program of
+representing causal relations in terms of probability relations propose
+that</p>
+
+<p class="indent">
+\(C\) causes \(E\) if and only if the probability of \(E\) is greater
+given \(C\) than given not \(C\), provided that \(\ldots X\ldots\).
+</p>
+
+<p>
+
+The proviso is needed to filter cases where probability relations
+between \(C\)-type events and \(E\)-type events do not track causal relations.
+Their opinions divide on whether causal concepts need to or can be used
+without vicious circularity in spelling out the content of the proviso
+\(\ldots X\ldots\). Reductionists seek ways of spelling out the proviso
+in terms of homogenous reference classes, where homogeneity is spelled
+out in terms of robust correlations conditional on a set of factors
+that are held fixed. Anti-reductionists are quick to ask: which
+factors? To take all possible factors to be relevant is not only
+epistemologically intractable, but it can lead to silly conclusions
+insofar as all but absolutely fundamental causal processes can be
+manipulated by introducing some intervening factors. E.g., the
+probability of death given a heart attack is greater than without the
+heart attack, but the contribution of the heart attack is
+&lsquo;screened off&rsquo; in cases where the heart attack coincides
+with being run down by a truck. In this example, the chances of death
+are overdetermined. Cases of causal overdetermination are extreme
+examples of causal networks in which probabilistic relevance is washed
+out or inverted by the causal contributions of an exogenous variable.
+In the experimental sciences, attempts at isolating interactions
+between factors from intervening variables are standard procedure.
+However, what is achievable even in the best laboratory conditions will
+fall short of the ideal of showing that there are no intervening
+factors on which a correlation is dependent. To show the latter would
+require showing that a negative existential proposition is true.</p>
+
+<p>
+
+Anti-reductionists have a ready answer to the question of which
+factors have to be held fixed when evaluating probabilistic
+dependencies and probabilistic independence. They want all potentially
+<em>causally relevant factors that are of interest</em> to be held
+fixed for the purposes of identifying the probability relations between
+C and E that are due to and are apt for representing causal
+connections. According to this approach, reference classes that are
+causally homogenous provide the proper basis for evaluating probability
+relations. One then looks to background scientific theories and other
+knowledge of causal relations to determine whether reference classes
+are causally homogenous.<sup>[<a href="notes.html#note-9" id="ref-9">9</a>]</sup>
+ In many cases, however, our curiosity about
+causal relations outstrips our current knowledge of causally relevant
+variables that need to be held fixed. Then, inferences to causal
+relations from statistical data that can always be counter-posed with
+reversed regularities in different partitions of the data can lead to
+inconsistent claims concerning causal relations.</p>
+
+<p>
+That said, reversals in data occur, researchers face the question of
+whether the associations in the aggregated data are spurious, or
+whether the associations in the partitioned data are spurious.
+Different causal models (represented by different directed acyclic
+graphs) will be apt to represent different answers in different cases
+(see the entry on
+ <a href="../causation-probabilistic/">probabilistic causation</a>). 
+ These models can be tested by interventions that isolate and control
+the values taken by variables that are ostensible causes of effects
+that are of interest to the researcher. Properly conducted experiments
+will isolate variables to be manipulated and then read off the effects
+of the manipulations (see the entry on
+ <a href="../causation-mani/">causation and manipulability</a>). 
+The so-called &ldquo;back-door criterion&rdquo; (Pearl 1993) states
+precisely what is required for some variable to be suitably isolated
+for manipulation. So, the problems posed by Simpson reversals can be
+solved by testing different causal hypotheses that are consistent with
+the observed data where the tests by interventions provide a basis,
+over and above mere observations, for accepting some causal models as
+correct representations of causal connections and for rejecting others
+that have merely spurious associations. Simpson&rsquo;s
+&ldquo;paradox&rdquo; is thus resolved in the sense that it is
+possible to test different causal hypotheses that reveal which
+associations are spurious. (For more on this method see Pearl
+2014.)</p>
+
+
+<h2 id="SimpReveIneqEvolSett">5. Simpson&rsquo;s Reversal of Inequalities in Evolutionary Settings</h2>
+
+<p>
+
+Simpson&rsquo;s Reversals of Inequalities have applications in economic
+theory and population genetics, especially in cases involving
+competition among businesses or organisms. In the above example of
+differential hiring of men and women, imagine that we were to map the
+women onto, say, &lsquo;lemmings&rsquo; and the men onto, say,
+&lsquo;rats&rsquo;. Imagine the lemmings to be altruistic and
+self-sacrificing, or alternatively imagine them to be irrational,
+inefficient or lazy&mdash;either way, by one means or another,
+imagine that they behave in ways that benefit their neighbours at their
+own expense. Imagine the rats to be selfish, rational and efficient,
+and regularly to gain benefits at the expense of their neighbours.</p>
+
+<p>
+
+Next, map the History Department onto Norway during a very severe
+winter in Norway, and suppose there are more rats than lemmings in
+Norway. Then life is tough for everyone in Norway, and it is even
+tougher for lemmings than for rats. Map the Geography Department onto
+Sweden which is in the midst of a very mild winter, and suppose there
+to be more lemmings than rats in Sweden. Then life is easier for
+everyone in Sweden, though it is even easier for free-riding and
+opportunistic rats than it is for lemmings. Finally, consider the
+reproductive rates for rats and lemmings in the total land mass of the
+two countries. (Or, if these &lsquo;rats&rsquo; and
+&lsquo;lemmings&rsquo; were businesses, consider their relative
+bankruptcy rates.) The numbers might then display the same pattern
+that we described for hiring rates of men and women at the University
+of California:</p>
+
+<table class="centered cellpad-med-dense cell-center">
+<tr>
+<td>&nbsp;</td>
+<td>Lemmings</td>
+<td>&nbsp;</td>
+<td>Rats</td>
+</tr>
+
+<tr>
+<td>Norway</td>
+<td>
+\((1\times 10^9)/(5\times 10^9)\)</td>
+<td>\(\lt\)</td>
+<td>
+\((2\times 10^9)/(8\times 10^9)\)</td>
+</tr>
+
+<tr>
+<td>Sweden</td>
+<td>
+\((6\times 10^9)/(8\times 10^9)\)</td>
+<td>\(\lt\)</td>
+<td>
+\((4\times 10^9)/(5\times 10^9)\)</td>
+</tr>
+
+<tr>
+<td>Scandinavia</td>
+<td>
+\((7\times 10^9)/(13\times 10^9)\)</td>
+<td>\(\gt\)</td>
+<td>
+\((6\times 10^9)/(13\times 10^9)\)</td>
+</tr>
+</table>
+
+<p>
+
+Lemmings are losing ground in Norway, and they are losing ground in
+Sweden; yet they are gaining ground in combined areas that constitute the two countries.</p>
+
+<p>
+
+The reason that lemmings are gaining ground in the combined area of the two countries is that
+<em>more of the lemmings are living where the survival rate is
+higher</em>. Note that the survival rate is higher there precisely
+because that is where more of the lemmings are living. Thus, if rats
+congregate together, the selfish efficiency of each rat will be bad not
+only for the poor lemmings in the neighborhood but also for other rats.
+Even if only <em>slightly</em> more of the rats are living in one
+region rather than another, if the benefits they gain at their
+neighbors&rsquo; expense become <em>too extreme</em> then this will
+reduce the survival rate of everyone in that neighborhood, rats
+included; this will precipitate a Simpson&rsquo;s Reversal, and the number of
+rats will begin to go down globally when compared with lemmings.</p>
+
+<p>
+
+In both Darwinian evolutionary theory and much of economic theory, it
+is hard to see how &lsquo;altruism&rsquo; (or, for that matter,
+systematic inefficiency) could evolve, or be sustained over the long
+term. That is, it is hard to see how a population could sustain
+heritable patterns of behaviour that <em>benefit the competitors</em>
+of an individual business or organisms at the expense of the long-term
+chances of survival or reproductive success for those individuals and
+others with the same dispositions. For this reason it is of
+considerable theoretical significance to explore the applications of
+Simpson&rsquo;s Paradox, to see whether this might help to explain not only
+the altruism but also the irrationality, inefficiency, laziness and
+other vices that may prevail in populations, and that can cause a
+population to fall short of the economic rationalist&rsquo;s or Darwinian&rsquo;s
+ideal of the ruthlessly efficient pursuit by each individual of its
+own profits or long-term reproductive success. On balance, this is
+probably cheerful news.</p>
+
+</div>
+
+<div id="bibliography">
+
+<h2 id="Bib">Bibliography</h2>
+
+<ul class="hanging">
+
+<li>Axelrod, R., 1984, <em>The Evolution of Cooperation</em>, New York:
+Basic Books.</li>
+
+<li>Bickel, P. J., Hjammel, E. A., and O&rsquo;Connell, J. W., 1975,
+&ldquo;Sex Bias in Graduate Admissions: Data From Berkeley&rdquo;,
+<em>Science</em>, 187: 398&ndash;404.</li>
+
+<li>Blyth, C. R., 1972, &ldquo;On Simpson&rsquo;s Paradox and the Sure Thing
+Principle&rdquo;, <em>Journal of the American Statistical
+Association</em>, 67: 364&ndash;366.</li>
+
+<li>Cartwright, N., 1979, &ldquo;Causal laws and effective
+strategies&rdquo;, <em>No&ucirc;s</em>, 13 (4): 419&ndash;437.</li>
+
+<li>&ndash;&ndash;&ndash;, 2001, &ldquo;What is wrong with Bayes Nets?&rdquo;,
+<em>The Monist</em>, 84 (2): 242&ndash;265. Reprinted in <em>Probability is
+the Very Guide of Life</em>, H. E. Kyburg, Jr. and M. Thalos (eds.),
+Chicago and La Salle, IL: Open Court, 2003, 253&ndash;275.</li>
+
+<li>Cohen, M. R., and Nagel, E., 1934, <em>An Introduction to Logic and
+Scientific Method</em>, New York: Harcourt, Brace and Co.</li>
+
+<li>Dawid, A. P., 1979, &ldquo;Conditional independence in statistical
+theory,&rdquo; <em>Journal of the Royal Statistical Society</em>
+(Series B), 41: 1&ndash;15.</li>
+
+<li>Dupre, J. and Cartwright, N., 1988, &ldquo;Probability and
+causality: Why Hume and indeterminism don&rsquo;t
+mix&rdquo;, <em>No&ucirc;s</em>, 22: 521&ndash;536.</li>
+
+<li>Eells, E., 1987, &ldquo;Cartwright and Otte on Simpson&rsquo;s
+Paradox,&rdquo; <em>Philosophy of Science</em>, 54: 233&ndash;243.</li>
+
+<li>Glymour, C. and Meek, C., 1994, &ldquo;Conditioning and
+Intervening&rdquo;, <em>British Journal for the Philosophy of
+Science</em>, 45: 1001&ndash;1021.</li>
+
+<li>Hardcastle, V.G., 1991, &ldquo;Partitions, probabilistic causal
+laws, and Simpson&rsquo;s Paradox,&rdquo; <em>Synthese</em>, 86: 209&ndash;228.</li>
+
+<li>Hesslow, G., 1976, &ldquo;Discussion: Two notes on the
+probabilistic approach to causality,&rdquo; <em>Philosophy of
+Science</em>, 43: 290&ndash;292.</li>
+
+<li>Lindly, D. V., and Novick, M. R., 1981, &ldquo;The role of
+exchangeability in inference&rdquo;, <em>Journal of the American
+Statistical Association</em>, 9: 45&ndash;58.</li>
+
+<li>Malinas, G., 1997, &ldquo;Simpson&rsquo;s Paradox and the wayward
+researcher&rdquo;, <em>Australasian Journal of Philosophy</em>, 75:
+343&ndash;359.</li>
+
+<li>&ndash;&ndash;&ndash;, 2001, &ldquo;Simpson&rsquo;s Paradox: A logically benign,
+empirically treacherous hydra&rdquo;, <em>The Monist</em>, 84 (2):
+265&ndash;284. Reprinted in <em>Probability Is the Very Guide of Life</em>,
+Henry E. Kyburg, Jr. and Mariam Thalos (eds.), Chicago and La Salle,
+IL: Open Court, 2003, 165&ndash;182.</li>
+
+<li>Mittal, Y., 1991, &ldquo;Homogeneity of subpopulations and
+Simpson&rsquo;s Paradox&rdquo;, <em>Journal of the American Statistical
+Association</em>, 86: 167&ndash;172.</li>
+
+<li>Otte, R., 1985, &ldquo;Probabilistic causality and Simpson&rsquo;s
+Paradox&rdquo;, <em>Philosophy of Science</em>, 52: 110&ndash;125.</li>
+
+<li>Pearl, J., 1988, <em>Probabilistic Reasoning in Intelligent
+Systems</em>, San Mateo, CA: Morgan Kaufman.</li>
+
+<li>&ndash;&ndash;&ndash;, 1993, &ldquo;Comment: Graphical Models,
+Causality, and Intervention&rdquo;, <em>Statistical Science</em>, 8:
+266&ndash;269.</li>
+
+<li>&ndash;&ndash;&ndash;, 2000, <em>Causality: Models, Reasoning, and
+Inference</em>, New York, Cambridge: Cambridge University
+Press. [Second Edition, 2009.]</li>
+
+<li>&ndash;&ndash;&ndash;, 2014, &ldquo;Comment: Understanding
+Simpson&rsquo;s Paradox&rdquo;, <em>The American Statistician</em>,
+68: 8&ndash;13.</li>
+
+<li>Reichenbach, H., 1971, <em>The Direction of Time</em>, Berkeley:
+University of California Press.</li>
+
+<li>Savage, L. J., 1954, <em>The Foundations of Statistics</em>, New
+York: John Wiley and Sons.</li>
+
+<li>Simpson, E.H., 1951, &ldquo;The interpretation of interaction in
+contingency tables&rdquo;, <em>Journal of the Royal Statistical
+Society</em> (Series B), 13: 238&ndash;241.</li>
+
+<li>Skyrms, B., 1980, <em>Causal Necessity</em>, New Haven; Yale
+University Press.</li>
+
+<li>Sober, E., 1993, <em>The Nature of Selection</em>, Chicago:
+University of Chicago Press.</li>
+
+<li>&ndash;&ndash;&ndash;, 1993, <em>Philosophy of Biology</em>, Oxford: Oxford
+University Press.</li>
+
+<li>Sober, E. and D. S. Wilson, 1998,<em>Unto Others: The Evolution and
+Psychology of Unselfish Behaviour</em>, Cambridge, MA: Harvard
+University Press.</li>
+
+<li>Spohn, W., 2001, &ldquo;Bayesian nets are all there is to
+causality&rdquo;, in <em>Stochastic Dependence and Causality</em>,
+D. Constantini, M. C. Galavotti, and P. Suppes (eds.), Stanford: CSLI
+Publications.</li>
+
+<li>Sunder, S., 1983, &ldquo;Simpson&rsquo;s reversal paradox and cost
+allocations&rdquo;, <em>Journal of Accounting Research</em>, 21:
+222&ndash;233.</li>
+
+<li>Suppes, P., 1970, <em>A Probabilistic Theory of Causality</em>,
+Amsterdam; North-Holland Publishing Co..</li>
+
+<li>Thalos, M., 2003, &ldquo;The Reduction of Causation&rdquo;, in
+H. Kyburg and M. Thalos (eds.), <em>Probability is the Very Guide of
+Life: The Philosophical Uses of Chance</em>, Chicago: Open Court.</li>
+
+<li>Thornton, R. J., and Innes, J. T., 1985, &ldquo;On Simpson&rsquo;s
+Paradox in economic statistics&rdquo;, <em>Oxford Bulletin of Economics
+and Statistics</em>, 47: 387&ndash;394.</li>
+
+<li>Van Frassen, B. C., 1989, <em>Laws and Symmetry</em>, Oxford:
+Clarendon.</li>
+
+<li>Yule, G. H., 1903, &ldquo;Notes on the theory of association of
+attributes in Statistics&rdquo;, <em>Biometrika</em>, 2: 121&ndash;134.</li>
+
+</ul>
+
+</div>
+
+<div id="academic-tools">
+
+<h2 id="Aca">Academic Tools</h2>
+
+<blockquote>
+<table>
+<tr><td valign="top"><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=paradox-simpson" target="other">How to cite this entry</a>.</td>
+</tr>
+<tr><td valign="top"><img src="../../symbols/sepman-icon.jpg" alt="sep man icon" /></td>
+<td><a href="https://leibniz.stanford.edu/friends/preview/paradox-simpson/" target="other">Preview the PDF version of this entry</a> at the <a href="https://leibniz.stanford.edu/friends/" target="other">Friends of the SEP Society</a>.</td>
+</tr>
+<tr><td valign="top"><img src="../../symbols/inpho.png" alt="inpho icon" /></td>
+<td><a href="https://www.inphoproject.org/entity?sep=paradox-simpson&amp;redirect=True" target="other">Look up this entry topic</a> at the <a href="https://www.inphoproject.org/" target="other">Internet Philosophy Ontology Project</a> (InPhO).</td>
+</tr>
+<tr><td valign="top"><img src="../../symbols/pp.gif" alt="phil papers icon" /></td>
+<td><a href="http://philpapers.org/sep/paradox-simpson/" target="other">Enhanced bibliography for this entry</a> at <a href="http://philpapers.org" target="other">PhilPapers</a>, with links to its database.</td>
+</tr>
+</table>
+</blockquote>
+
+</div>
+
+<div id="other-internet-resources">
+
+<h2 id="Oth">Other Internet Resources</h2>
+
+<ul>
+<li><a href="https://web.archive.org/web/20090209220216/http://exploringdata.cqu.edu.au/sim_par.htm" target="other">Simpson&rsquo;s Paradox</a>,
+ from the Exploring Data website of <em>Education Queensland</em> (Australia) (archived on the Internet Archive)</li>
+
+
+<li><a href="https://web.archive.org/web/20160316115444/http://www.cawtech.freeserve.co.uk/simpsons.2.html" target="other">Simpson&rsquo;s Paradox</a>,
+ by Alan Crowe  (archived on the Internet Archive)</li>
+
+<li><a href="http://www.intuitor.com/statistics/SimpsonsParadox.html" target="other">Simpson&rsquo;s Paradox&mdash;When Big Data Sets Go Bad</a>,
+in Amazing Applications of Probability and Statistics at www.intuitor.com.</li>
+
+
+<li>Online paper by Nick Chater, Ivo Vlaev and Maurice Grinberg, 
+ &ldquo;<a href="http://citeseerx.ist.psu.edu/viewdoc/download;jsessionid=D70EA8ACD610B633EFFC2B86E30C6ACF?doi=10.1.1.177.5622&amp;rep=rep1&amp;type=pdf" target="other">A new consequence of Simpson&rsquo;s Paradox: Stable co-operation in one-shot Prisoner&rsquo;s Dilemma from populations of individualistic learning agents</a>,&rdquo;
+ University College London/New Bulgarian University.</li>
+
+
+</ul>
+
+</div>
+
+<div id="related-entries">
+
+<h2 id="Rel">Related Entries</h2>
+
+<p>
+
+ <a href="../causation-mani/">causation: and manipulability</a> |
+ <a href="../causation-probabilistic/">causation: probabilistic</a> |
+ <a href="../game-evolutionary/">game theory: evolutionary</a> |
+ <a href="../prisoner-dilemma/">prisoner&rsquo;s dilemma</a> |
+ <a href="../physics-Rpcc/">Reichenbach, Hans: common cause principle</a>
+
+</p>
+
+</div>
+
+<div id="acknowledgments">
+
+<h3>Acknowledgments</h3>
+
+<p>
+ The authors would like to thank Paul Oppenheimer for spotting
+an incorrectly specified statistic and probability in Section 1.3 and
+Section 2, respectively. </p>
+
+</div>
+
+<script type="text/javascript" src="local.js"></script>
+<script type="text/javascript" src="../../MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2016</a> by
+
+<br />
+Gary Malinas
+<br />
+John Bigelow
+
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">CSLI, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p class="csli-logo"><a href="https://www-csli.stanford.edu/"><img src="../../symbols/SU_csli.png" width="355" alt="Stanford Center for the Study of Language and Information" /></a></p>
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2016</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Center for the Study of Language and Information (CSLI), Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+
+
+</body>
+</html>

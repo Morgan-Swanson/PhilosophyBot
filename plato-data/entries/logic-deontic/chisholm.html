@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Deontic Logic &gt; A Bit More on Chisholm's Paradox (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-deontic/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="../../search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="./">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="./#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-deontic/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-deontic">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index.html">Deontic Logic</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>A Bit More on Chisholm's Paradox</h2>
+
+<p>
+
+Recall the Chisholm quartet and its most natural symbolization in SDL:</p>
+
+<blockquote>
+
+(1) It ought to be that Jones goes to assist his neighbors. <br />(1&prime;)
+<strong>OB</strong><em>g</em>.<br />
+
+(2) It ought to be that if Jones goes, then he tells them he is
+coming. <br />(2&prime;) <strong>OB</strong>(<em>g</em> &rarr;
+<em>t</em>).<br />
+
+(3) If Jones doesn't go, then he ought not tell them he is coming.
+<br />(3&prime;) ~<em>g</em> &rarr; <strong>OB</strong>~<em>t</em>.<br />
+
+(4) Jones doesn't go. <br />(4&prime;) ~<em>g</em>.
+
+</blockquote>
+
+<p>
+
+There is a general point to be made regarding the key inferences that
+generate the paradox per the above symbolization. There is a sense in
+which the inference from (1&prime;) and (2&prime;) to
+<strong>OB</strong><em>t</em> and the inference from (3&prime;) &amp;
+(4&prime;) to <strong>OB</strong>~<em>t</em> involve
+&ldquo;detachment&rdquo; of an obligation from a pair of premises, one
+of which involves a deontic conditional in some way.  Let us introduce
+a bit of regimentation. Let</p>
+
+<blockquote>
+
+&ldquo;<strong>OB</strong>(<em>q</em>/<em>p</em>)&rdquo;
+
+</blockquote>
+
+<p>
+
+represent a shorthand for a conditional obligation or ought
+statement like that in the natural language sentence, (3),
+ above.<sup>[<a href="notes.html#chisholm-1" name="note-1">1</a>]</sup>
+ So we will read <strong>OB</strong>(<em>q</em>/<em>p</em>) as
+&ldquo;if <em>p</em>, then it ought to be (or it is obligatory) that
+<em>q</em>,&rdquo; in the manner of (3) above. Suppose we also assume,
+as almost all
+ have<sup>[<a href="notes.html#chisholm-2" name="note-2">2</a>]</sup>
+ that monadic obligations are disguised dyadic obligations, per the
+following analysis:</p>
+
+<blockquote>
+
+<strong>OB</strong><em>p</em> =<sub>df</sub> <strong>OB</strong>(<em>p</em>/&#8868;).
+
+</blockquote>
+
+<p>
+
+With this in mind we distinguish between two relevant types of
+&ldquo;detachment
+ principles&rdquo;<sup>[<a href="notes.html#chisholm-3" name="note-3">3</a>]</sup>
+ that we might ascribe to these iffy-&lsquo;ought&rsquo;s:</p>
+
+<blockquote>
+
+<em>Factual Detachment (FD)</em>: <em>p</em> &amp;
+<strong>OB</strong>(<em>q</em>/<em>p</em>) .&rarr;
+<strong>OB</strong><em>q</em>
+
+<p>
+
+<em>Deontic Detachment (DD)</em>: <strong>OB</strong><em>p</em> &amp;
+<strong>OB</strong>(<em>q</em>/<em>p</em>). &rarr;
+<strong>OB</strong><em>q</em></p>
+
+</blockquote>
+
+<p>
+
+<em>Factual detachment</em> tells us that from the fact that
+<em>p</em>, and the deontic conditional to the effect that if
+<em>p</em> then it ought to be that <em>q</em>, we can conclude that
+it ought to be that <em>q</em>. <em>Deontic Detachment</em> in
+contrast tells us that from the fact that it ought to be that
+<em>p</em> and that if <em>p</em>, then it ought to be that
+<em>q</em>, we can conclude that it ought to be that <em>q</em>. If we
+interpret a deontic conditional as a material conditional with an
+obligatory consequent (as in (3&prime;) above), FD, but not DD is
+supported. Conversely, if we interpret deontic conditionals as
+obligatory material conditionals (as in (2&prime;) above), DD, but not
+FD is
+ supported.<sup>[<a href="notes.html#chisholm-4" name="note-4">4</a>]</sup>
+ Although we have shown earlier that neither of these interpretations
+is acceptable, the contrast reveals a general problem. <em>Carte
+blanche</em> endorsement of both types of detachment (without some
+restriction) is not tenable, since it leads implausibly to the
+conclusion that we are both obligated to tell (the neighbor we are
+coming) and obligated to not tell. Thus researchers tended to divide
+up over which principle of the two they endorsed (Loewer and Belzer
+1983). The Factual Detachment camp typically endorsed the view that
+the conditional in (3) in the Chisholm Quartet needs to be interpreted
+as a non-material conditional, but otherwise things are as they seem
+in (3): we have a conditional obligation that is a simple composite of
+a non-deontic conditional and a pure unary deontic operator in the
+consequent:</p>
+
+<blockquote>
+
+<strong>OB</strong>(<em>q</em>/<em>p</em>) =<sub>df</sub>
+ <em>p</em> &rArr; <strong>OB</strong><em>q</em>, for some independent
+ conditional.<sup>[<a href="notes.html#chisholm-5" name="note-5">5</a>]</sup>
+
+</blockquote>
+
+<p>
+
+Typically, the conditional was a non-classical conditional of the sort
+made famous by Stalnaker and
+ Lewis.<sup>[<a href="notes.html#chisholm-6" name="note-6">6</a>]</sup>
+ It is then generally maintained that deontic detachment is flawed,
+since the conditional obligations like those in (2) tell us only what
+to do in ideal circumstances, but they do not necessarily provide
+ &ldquo;cues&rdquo;<sup>[<a href="notes.html#chisholm-7" name="note-7">7</a>]</sup>
+ for action <em>in the actual world</em>, where things are often
+typically quite sub-ideal, as (4) combined with (1) indicates. Thus from
+the fact that Jones ought to go and he ought to tell if he goes, it
+doesn't follow that what he ought to <em>actually</em> do is
+tell&mdash;that would be so only if it was also a fact that he goes to
+their aid. At best, we can only say that he ought <em>ideally</em> to
+go.</p>
+
+<p>
+
+This suggestion seems a bit more difficult when we change the
+conditional to something like &ldquo;If Doe does kill his mother, then
+it is obligatory that Doe kills her gently.&rdquo; The idea that my
+obligation to not kill my mother gently (say for an inheritance)
+merely expresses an &ldquo;ideal&rdquo; obligation, but not an actual
+obligation, given that I will kill her, seems hard to swallow. So this
+case makes matters a bit harder for those favoring a factual
+detachment approach for generating actual obligations. Similarly, it
+would seem that if it is impermissible for me to kill my mother, then
+it is impermissible for me to do so gently, or to do so while
+ dancing.<sup>[<a href="notes.html#chisholm-8" name="note-8">8</a>]</sup>
+ So <em>carte blanche</em> factual detachment seems to allow the mere
+fact that I will take an action in the future (killing my mother) that
+is horribly wrong and completely avoidable now to render obligatory
+another horrible (but slightly less horrible) action in the future
+(killing my mother gently). The latter action must be completely
+avoidable if the former is, and the latter action is one that I would
+<em>seem</em> to be equally obligated to not make.</p>
+
+<p>
+
+The main alternative camp represented conditional obligations via
+dyadic non-composite obligation operators modeled syntactically on
+conditional probability. They rejected the idea that
+<strong>OB</strong>(<em>q</em>/<em>p</em>) =<sub>df</sub>
+ <em>p</em> &rArr; <strong>OB</strong><em>q</em>, for some independent
+conditional. In a sense, on this view, deontic conditionals are viewed
+as idioms: the meaning of the compound is not a straightforward
+function of the meaning of the parts. The underlying intuition
+regarding the Chisholm example is that even if it might be true that
+we will violate some obligation, that doesn't get us off the hook from
+obligations that derive from the original one that we will violate. If
+I must go help and I must inform my neighbors that I'm coming, if I do
+go help, then I must inform them, and the fact that I will in fact
+violate the primary obligation does not block the derivative
+obligation anymore than it does the primary one itself.</p>
+
+<p>
+
+One early semantic picture for the latter camp was that a sentence of
+the form <strong>OB</strong>(<em>q</em>/<em>p</em>) is true at a world
+<em>i</em> iff the <em>i</em>-best <em>p</em>-worlds are all
+<em>q</em>-worlds. <strong>OB</strong><em>q</em> is then true iff
+<strong>OB</strong>(<em>q</em>/&#8868;), and so iff all the
+unqualifiedly <em>i</em>-best worlds are <em>q</em>-worlds (Hansson
+1969). Note that this weds preference-based semantic orderings with
+dyadic conditional
+ obligations.<sup>[<a href="notes.html#chisholm-9" name="note-9">9</a>]</sup>
+ This reflects a widespread trend. Factual detachment does not work in
+this case, since even if our world is an I-don't-go-help-world, and
+the best among the I-don't-go-help-worlds are I-don't-call-worlds, it
+does not follow that the <em>unqualifiedly</em> best worlds are
+I-don't-call-worlds. In fact, in this example, these folks would
+maintain, the unqualifiedly best worlds are both I-go worlds and
+I-call worlds, and the fact that I won't do what I'm supposed to do
+won't change that.</p>
+
+<p>
+
+But one is compelled to ask those in the Deontic Detachment Camp: what
+then is the point of such apparent conditionals if we can't ever
+detach them from their apparent antecedents, and how are these
+conditionals related to regular ones? This seems to be the central
+challenge for this camp. Thus they often endorse a restricted form of
+factual detachment, of which the following is a representative
+instance:</p>
+
+<blockquote>
+
+<em>Restricted Factual Detachment</em>: &#9633;<em>p</em> &amp;
+<strong>OB</strong>(<em>q</em>/<em>p</em>) .&rarr;
+<strong>OB</strong><em>q</em>.
+
+</blockquote>
+
+<p>
+
+Here &#9633;<em>p</em> might mean various things, for example that
+<em>p</em> is physically unalterable or necessary as of this moment in
+ history.<sup>[<a href="notes.html#chisholm-10" name="note-10">10</a>]</sup>
+ Only if <em>p</em> is settled true in some sense, can we conclude
+from <strong>OB</strong>(<em>q</em>/<em>p</em>) that
+<strong>OB</strong><em>q</em>. This certainly helps, but it still
+leaves us with a bit of a puzzle about why this apparent composite of
+a conditional and a deontic operator is actually some sort of
+primitive idiom involving a modal notion.</p>
+
+<p>
+
+So it seems like we are left with a dilemma: either (1) you allow
+factual detachment and get the consequences earlier noted to the
+effect that simply because someone will act like a louse, he is
+obligated to do slightly mitigating louse-like things, or (2) instead
+you claim that &ldquo;if <em>p</em>, then ought <em>q</em>&rdquo; is
+really an idiom, and the meaning of the whole is not a function of the
+meaning of its conditional and deontic parts.  Each seems to be a
+conclusion one would otherwise prefer to avoid.</p>
+
+<p>
+
+There have been many attempts to try to solve Chisholm's problem by
+carefully distinguishing the times of the
+ obligations.<sup>[<a href="notes.html#chisholm-11" name="note-11">11</a>]</sup>
+ This was fueled in part by shifts in the examples, in particular to
+examples where the candidate &ldquo;derived&rdquo; obligations were
+clearly things to be done <em>after</em> the primary obligation was either
+fulfilled or violated (called &ldquo;forward&rdquo; versions of
+CTDs). This made the ploy of differentiating the times and doing
+careful bookkeeping about just which things were obligatory at which
+times promising. However, Chisholm's own example is most plausibly
+interpreted as either a case where the obligation to go help and the
+perhaps-derivable obligation to tell are <em>simultaneous</em> (called
+&ldquo;parallel&rdquo; versions), or where telling is even something
+to be done <em>before</em> you go (called &ldquo;backward&rdquo;
+ versions).<sup>[<a href="notes.html#chisholm-12" name="note-12">12</a>]</sup>
+ It is easy to imagine that the way to tell the neighbors that you
+will help might be to phone, and that would typically take place
+before you left to actually help. (For younger readers: there were no
+cell phones back in 1964, and phones were attached to boxes in houses
+by yard-length coiled cords.)  Concerns to coordinate aid, or to
+assure those stressed that aid is coming, often favor giving
+<em>advanced</em> notice.</p>
+
+<p>
+
+Alternatively, it was suggested that carefully attending to the action
+or agential components of the example and distinguishing those from
+the circumstances or propositional components would dissolve the
+ puzzle.<sup>[<a href="notes.html#chisholm-13" name="note-13">13</a>]</sup>
+ However, the phenomena invoked in the Chisholm example appear to be
+too general for that. Consider the following non-agential minor
+variant of an example (say of possible norms for a residential
+neighborhood) introduced in Prakken and Sergot 1996:</p>
+
+<blockquote>
+
+(1) It ought to be the case that there are no dogs.<br />
+
+(2) It ought to be the case that if there are no dogs, then there are
+no warning signs.<br />
+
+(3) If there are dogs, then it ought to be the case that there are
+warning signs.<br />
+
+(4) There are dogs.
+
+</blockquote>
+
+<p>
+
+Here we seem to have the same essentially puzzling phenomena present
+in Chisholm's original example, yet there is no apparent reference to
+actions above at all; instead the reference seems to be to states of
+affairs only. (Notice also that there is no issue of different times
+either for the presence/absence of dogs and the presence/absence of
+signs.)</p>
+
+<p>
+
+Thus, it looks like tinkering with the temporal or action aspects of
+the Chisholm-style examples (however much time and action are
+important elsewhere to deontic logic) merely postpones the
+inevitable. So far, this problem appears to be not easy to
+convincingly solve.</p>
+
+<p>
+
+A formal sketch of a sample system favoring factual detachment can be
+easily found in chapter 10 of Chellas 1980, which is widely
+available. A system that favors deontic detachment over factual
+detachment is quickly sketched here. The main source is Goble
+2003 (but cf. van Fraassen 1972).</p>
+
+<p>
+
+Here, we assume a classical propositional language now extended with a
+dyadic construction, <strong>OB</strong>( / ), taken as primitive. A
+monadic <strong>OB</strong> operator is then defined in the manner
+mentioned above:</p>
+
+<blockquote>
+
+<strong>OB</strong><em>p</em> =<sub>df</sub>
+<strong>OB</strong>(<em>p</em>/&#8868;).
+
+</blockquote>
+
+<p>
+
+We can define an ordering relation between propositions as
+follows:</p>
+
+<blockquote>
+
+<em>p</em> &ge; <em>q</em> =<sub>df</sub>
+ ~<strong>OB</strong>(~<em>p</em>/<em>p</em>
+ &or; <em>q</em>).
+
+</blockquote>
+
+<p>
+
+This says that <em>p</em> is ranked as at least as high as <em>q</em>
+iff it is not obligatory that ~<em>p</em> on the condition that either
+<em>p</em> or
+ <em>q</em>.<sup>[<a href="notes.html#chisholm-14" name="note-14">14</a>]</sup></p>
+
+<p>
+
+An axiom system that is a natural dyadic correlate to SDL
+follows:</p>
+
+<!--pdf exclude begin-->
+<blockquote>
+<!--pdf exclude end-->
+
+<table width="80%">
+
+<tr>
+ <td>A1: All instances of PC tautologies</td>
+ <td>(TAUT)</td>
+</tr>
+
+<tr>
+ <td>A2: <strong>OB</strong>(<em>p</em> &rarr; <em>q</em>/<em>r</em>)
+&rarr; (<strong>OB</strong>(<em>p</em>/<em>r</em>) &rarr;
+<strong>OB</strong>(<em>q</em>/<em>r</em>)</td>
+ <td>(<strong>OB</strong>-CK)</td>
+</tr>
+
+<tr>
+ <td>A3: <strong>OB</strong>(<em>p</em>/<em>q</em>) &rarr;
+~<strong>OB</strong>(~<em>p</em>/<em>q</em>)</td>
+ <td>(<strong>OB</strong>-CNC)</td>
+</tr>
+
+<tr>
+ <td>A4: <strong>OB</strong>(T/T)</td> 
+ <td>(<strong>OB</strong>-CN)</td>
+</tr>
+
+<tr>
+ <td>A5: <strong>OB</strong>(<em>q</em>/<em>p</em>) &rarr;
+<strong>OB</strong>(<em>q</em> &amp; <em>p</em>/<em>p</em>)</td>
+ <td>(<strong>OB</strong>-CO&amp;)</td>
+</tr> 
+
+<tr>
+ <td>A6: (<em>p</em> &ge; <em>q</em>) &amp; <em>q</em> &ge;
+<em>r</em>) &rarr; <em>p</em> &ge; <em>r</em></td>
+ <td>(Trans)</td>
+</tr> 
+
+<tr>
+ <td>R1: If &#8866; <em>p</em> and
+ &#8866;
+ <em>p</em> &rarr; <em>q</em> then
+ &#8866;
+ <em>q</em></td>
+ <td>(MP)</td>
+</tr> 
+
+<tr>
+ <td>R2: If &#8866;
+ <em>p</em> &harr; <em>q</em> then
+ &#8866;
+<strong>OB</strong>(<em>r</em>/<em>p</em>) &harr;
+<strong>OB</strong>(<em>r</em>/<em>q</em>) </td>
+ <td>(<strong>OB</strong>-CRE)</td>
+</tr> 
+
+<tr>
+ <td>R3: If &#8866;
+ <em>p</em> &rarr; <em>q</em> then
+ &#8866;
+<strong>OB</strong>(<em>p</em>/<em>r</em>) &rarr;
+<strong>OB</strong>(<em>q</em>/<em>r</em>)</td>
+ <td>(<strong>OB</strong>-CRM)</td>
+</tr> 
+
+</table>
+
+<!--pdf exclude begin-->
+</blockquote>
+<!--pdf exclude end-->
+
+<p>
+
+A1-A4 and R1-R3 are conditional analogues of formulas or rules we have
+seen before in discussing axiomatizations of SDL itself. A5 and A6 are
+needed to generate a complete system relative to an ordering semantics
+of the following sort (merely sketched here).</p>
+
+<p>
+
+Assume we have a set of worlds and a set of ordering relations,
+<em>P</em><sub><em>i</em></sub>, for each world, <em>i</em>, where
+<em>j</em><em>P</em><sub><em>i</em></sub><em>k</em> is to be
+interpreted as saying that relative to <em>i</em>'s normative
+standards, <em>j</em> is at least as good as <em>k</em>. Assume also
+that all of the ordering relations are non-empty: for each world
+<em>i</em>, there is a world <em>k</em> and a world <em>m</em> such
+that <em>kP</em><sub><em>i</em></sub><em>m</em>. Call this structure a
+&ldquo;preference frame.&rdquo; For any preference relation in a
+preference frame, let <em>F</em>(<em>P</em><sub><em>i</em></sub>)
+represent the field of that relation: the set of all worlds that
+appear in some ordered pair constituting the relation,
+<em>P</em><sub><em>i</em></sub>. As usual, a model on a frame is an
+assignment to each propositional variable of a set of worlds (those
+where it will be deemed true). We then define the basic dyadic
+operator's truth-condition as follows:</p>
+
+<blockquote>
+
+<em>M</em>
+ &#8872;<sub><em>i</em></sub>
+ <strong>OB</strong>(<em>q</em>/<em>p</em>) iff there is a <em>j</em>
+in <em>F</em>(<em>P</em><sub><em>i</em></sub>) such that <em>M</em>
+ &#8872;<sub><em>j</em></sub>
+ <em>p</em> &amp; <em>q</em> and for each
+<em>k</em> such that <em>kP</em><sub><em>i</em></sub><em>j</em>, if
+<em>M</em>
+ &#8872;<sub><em>k</em></sub>
+ <em>p</em>, then <em>M</em>
+ &#8872;<sub><em>k</em></sub>
+ <em>q</em>.
+
+</blockquote>
+
+<p>
+
+That is, at <em>i</em>, it is obligatory that <em>q</em> given
+<em>p</em> iff there is some world <em>j</em> in the field of the
+<em>i</em>'s preference relation where both <em>p</em> and <em>q</em>
+are true, and for every world ranked at least as high <em>j</em>, if
+<em>p</em> is true at that world, then so is <em>q</em>.</p>
+
+<p>
+
+Call a preference frame standard iff all the preference relations in
+it are connected (and thus reflexive) and transitive relative to their
+fields:</p>
+
+<blockquote>
+
+For each <em>i</em>-relative preference relation,
+<em>P</em><sub><em>i</em></sub>,
+
+<blockquote>
+
+(1) if <em>j</em> and <em>k</em> are in
+<em>F</em>(<em>P</em><sub><em>i</em></sub>), then either
+<em>jP</em><sub><em>i</em></sub><em>k</em> or
+<em>kP</em><sub><em>i</em></sub><em>j</em> (connectedness).<br />
+
+(2) if <em>j</em>, <em>k</em>, and <em>m</em> are in
+<em>F</em>(<em>P</em><sub><em>i</em></sub>), then if
+<em>jP</em><sub><em>i</em></sub><em>k</em> and
+<em>kP</em><sub><em>i</em></sub><em>m</em>, then
+<em>jP</em><sub><em>i</em></sub><em>m</em> (transitivity).
+
+</blockquote>
+
+</blockquote>
+
+<p>
+
+Goble 2003 shows that the axiom system for dyadic obligation
+above is sound and complete for the set of standard preference frames.
+It is also easy to derive SDL using the above dyadic axiom system and
+the definition given for the monadic obligation operator. Goble's
+paper contains a number of other such results, for both monadic and
+dyadic systems, including generalizations that allow for conflicting
+obligations.</p>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2010</a> by
+
+<br />
+<a href="http://www.unh.edu/philosophy/Faculty_Pages_info/mcnamara_page.htm" target="other">Paul McNamara</a>
+&lt;<a href="m&#97;ilto:paulmunh&#37;40gmail&#37;2ecom"><em>paulmunh<abbr title=" at ">&#64;</abbr>gmail<abbr title=" dot ">&#46;</abbr>com</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">CSLI, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p class="csli-logo"><a href="https://www-csli.stanford.edu/"><img src="../../symbols/SU_csli.png" width="355" alt="Stanford Center for the Study of Language and Information" /></a></p>
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2016</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Center for the Study of Language and Information (CSLI), Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Gödel’s Incompleteness Theorems &gt; Supplement: The Diagonalization Lemma (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/goedel-incompleteness/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="../../search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="./">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="./#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/goedel-incompleteness/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=goedel-incompleteness">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index.html">G&ouml;del&rsquo;s Incompleteness Theorems</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Supplement: The Diagonalization Lemma</h2>
+
+<p>
+
+The proof of the Diagonalization Lemma centers on <em>the operation
+of substitution</em> (of a numeral for a variable in a formula): 
+
+If a formula with one free variable, <em>A</em>(<em>x</em>), and a number
+<strong><em>n</em></strong> are given, the operation of constructing
+the formula where the numeral for <strong><em>n</em></strong> has been
+substituted for the (free occurrences of the) variable <em>x</em>,
+that is, <em>A</em>(<em><u>n</u></em>), is purely mechanical. So is
+the analogous arithmetical operation which produces, given the
+G&ouml;del number of a formula (with one free variable)
+<sup>&lceil;</sup><em>A</em>(<em>x</em>)<sup>&rceil;</sup> and of a number
+<strong><em>n</em></strong>, the G&ouml;del number of the
+formula in which the numeral <em><u>n</u></em> has been substituted for the variable in
+the original formula, that is,
+<sup>&lceil;</sup><em>A</em>(<em><u>n</u></em>)<sup>&rceil;</sup>. The
+latter operation can be expressed in the language of arithmetic. Note,
+in particular, that nothing prevents <strong><em>n</em></strong> from
+being the G&ouml;del number of <em>A</em>(<em>x</em>) itself, that is,
+<sup>&lceil;</sup><em>A</em>(<em>x</em>)<sup>&rceil;</sup> (in the usual coding schemes, though,
+<strong><em>n</em></strong> cannot be
+<sup>&lceil;</sup><em>A</em>(<em><u>n</u></em>)<sup>&rceil;</sup>). This operation of substitution is
+applied here again and again.</p>
+
+<p>
+
+Let us refer to the arithmetized substitution function as
+<em>substn</em>(<sup>&lceil;</sup><em>A</em>(<em>x</em>)<sup>&rceil;</sup>,
+<strong><em>n</em></strong>) = 
+<sup>&lceil;</sup><em>A</em>(<em><u>n</u></em>)<sup>&rceil;</sup>, and let <em>S</em>(<em>x</em>,
+<em>y</em>, <em>z</em>) be a formula which strongly represents this
+operation, as a relation, in the language of our theory <em>F</em>. In
+other words, <em>S</em> is true of <em>x</em>, <em>y</em>, and
+<em>z</em>, if and only if:</p>
+
+<ul class="plain">
+<li><em>x</em> = 
+<sup>&lceil;</sup><em>A</em>(<em>x</em>)<sup>&rceil;</sup>, <em>y</em> =
+<strong><em>n</em></strong>, and <em>z</em> =
+<sup>&lceil;</sup><em>A</em>(<em><u>n</u></em>)<sup>&rceil;</sup>.</li>
+</ul>
+<p>
+
+Again, nothing prevents us from considering 
+<span class="nw"><em>substn</em>(<sup>&lceil;</sup><em>A</em>(<em>x</em>)<sup>&rceil;</sup>,
+<sup>&lceil;</sup><em>A</em>(<em>x</em>)<sup>&rceil;</sup>),</span> or, analogously,
+<span class="nw"><em>S</em>(<em>x</em>, <em>x</em>, <em>y</em>).</span></p>
+
+<p>
+
+Given any formula <em>A</em>(<em>x</em>), we can now construct
+another formula 
+<span class="nw">&exist;<em>y</em>[<em>A</em>(<em>y</em>) &and; 
+<em>S</em>(<em>x</em>, <em>x</em>, <em>y</em>)]</span> with one free variable
+<em>x</em>. Let us abbreviate it as <em>B</em>(<em>x</em>).</p>
+
+<p>
+
+This formula has a G&ouml;del number, say,
+<strong><em>k</em></strong> =
+<em><sup>&lceil;</sup></em><em>B</em>(<em>x</em>)<sup>&rceil;</sup>. By substituting the
+numeral <em><u>k</u></em> denoting it for <em>x</em> in
+<em>B</em>(<em>x</em>), we get <em>B</em>(<em><u>k</u></em>); let us call this
+sentence <em>D</em>. Looking back the chain definitions, we see
+that:</p>
+
+<ul class="plain">
+<li><em>D</em> := <em>B</em>(<em><u>k</u></em>) :=
+&exist;<em>y</em>[<em>A</em>(<em>y</em>) &and;
+<em>S</em>(<em><u>k</u></em>, <em><u>k</u></em>, <em>y</em>)].</li>
+</ul>
+
+<p>
+
+If 
+<span class="nw"><strong><em>m</em></strong> =
+<sup>&lceil;</sup><em>B</em>(<em><u>k</u></em>)<sup>&rceil;</sup>,</span> then
+<span class="nw"><em>substn</em>(<strong><em>k</em></strong>,
+<strong><em>k</em></strong>) = <strong><em>m</em></strong>,</span>
+and (assuming <em>F</em> contains a sufficient amount of arithmetic;
+<em>F</em> can then also prove that the result of the arithmetized
+substitution function is unique)</p>
+<ul class="plain">
+<li>
+<i>F</i> &#8866;
+&forall;<em>y</em>[<em>S</em>(<em><u>k</u></em>,<em><u>k</u></em>, <em>y</em>) &harr; 
+<em>y</em> = <em><u>m</u></em>]
+</li>
+</ul>
+<p>
+
+As <strong><em>k</em></strong> was the G&ouml;del number of the
+formula <em>B</em>(<em>x</em>) and <strong><em>m</em></strong> is the
+G&ouml;del number of the sentence which results when <em><u>k</u></em> is
+substituted for <em>x</em> in <em>B</em>(<em>x</em>), i.e.,
+<strong><em>m</em></strong> =
+<sup>&lceil;</sup><em>B</em>(<em><u>k</u></em>)<sup>&rceil;</sup>, we can write this as:</p>
+<ul class="plain">
+<li>
+<i>F</i> &#8866;
+ &forall;<em>y</em>[<em>S</em>(<em><u>k</u></em>,<em><u>k</u></em>, <em>y</em>) &harr; 
+<em>y</em> =
+<sup>&lceil;</sup><em>B</em>(<em><u>k</u></em>)<sup>&rceil;</sup>]
+</li>
+</ul>
+<p>
+
+By a little logic, we have</p>
+
+<ul class="plain">
+<li><em>F</em> &#8866; <em>D</em>   &harr; &exist;<em>y</em>[<em>A</em>(<em>y</em>) 
+&and; <em>y</em> = <sup>&lceil;</sup><em>B</em>(<em><u>k</u></em>)<sup>&rceil;</sup>], and from this</li>
+
+<li> <em>F</em> &#8866; <em>D</em>   &harr; <em>A</em>(<sup>&lceil;</sup><em>B</em>(<em><u>k</u></em>)<sup>&rceil;</sup>), i.e.,</li>
+<li> <i>F</i> &#8866; <em>D</em> &harr; <em>A</em>(<sup>&lceil;</sup><em>D</em><sup>&rceil;</sup>).</li>
+</ul>
+
+<p>
+
+This completes the proof.</p>
+
+<p>
+
+For the relations of the G&ouml;delian Diagonalization Lemma to
+Cantor's method of diagonalization in set theory, see Gaifman
+2006.</p>
+
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2020</a> by
+
+<br />
+<a href="http://www.uta.fi/yky/en/contact/personnel/panuraatikainen/index.html" target="other">Panu Raatikainen</a>
+&lt;<a href="m&#97;ilto:Panu&#37;2eRaatikainen&#37;40uta&#37;2efi"><em>Panu<abbr title=" dot ">&#46;</abbr>Raatikainen<abbr title=" at ">&#64;</abbr>uta<abbr title=" dot ">&#46;</abbr>fi</em></a>&gt;
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">CSLI, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p class="csli-logo"><a href="https://www-csli.stanford.edu/"><img src="../../symbols/SU_csli.png" width="355" alt="Stanford Center for the Study of Language and Information" /></a></p>
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2020</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Center for the Study of Language and Information (CSLI), Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+Bayesian Epistemology &gt; Dutch Book Arguments (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/epistemology-bayesian/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="../../search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="./">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="./#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/epistemology-bayesian/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=epistemology-bayesian">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead">Supplement to <a href="index.html">Bayesian Epistemology</a></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Dutch Book Arguments</h2>
+
+<p>
+
+The Ramsey/de Finetti argument can be illustrated by an
+example. Suppose that agent <em>A</em>'s degrees of belief in
+<em>S</em> and ~<em>S</em> (written <em>db</em>(<em>S</em>) and
+<em>db</em>(~<em>S</em>)) are each .51, and, thus that their sum 1.02
+(greater than one). On the behavioral interpretation of degrees of
+belief introduced above, <em>A</em> would be willing to pay
+<em>db</em>(<em>S</em>)
+ &times; $1 for a
+unit wager on <em>S</em> and <em>db</em>(~<em>S</em>) 
+ &times; $1 for a unit wager on ~<em>S</em>. If a bookie <em>B</em>
+sells both wagers to <em>A</em> for a total of $1.02, the combination
+would be a synchronic Dutch Book -- synchronic because the wagers
+could both be entered into at the same time, and a Dutch Book because
+<em>A</em> would have paid $1.02 on a combination of wagers guaranteed
+to pay exactly $1. Thus, <em>A</em> would have a guaranteed net loss
+of $.02</p>
+<p>
+
+The Lewis/Teller argument can also be illustrated by an
+example. Suppose that agent <em>A</em>'s degrees of belief
+satisfy the synchronic probabilistic coherence conditions -- that is,
+the probability laws. Suppose also that <em>A</em> has the following initial
+probabilities:</p>
+<blockquote>
+<em>P</em><sub><em>i</em></sub>(<em>S</em>) = 1/5
+
+<p>
+<em>P</em><sub><em>i</em></sub>(<em>T</em>) = 1/5</p>
+
+<p>
+<em>P</em><sub><em>i</em></sub>(<em>S</em>&amp;<em>T</em>) = 1/10</p>
+
+<p>
+<em>P</em><sub><em>i</em></sub>(<em>S</em>/<em>T</em>) = 1/2</p>
+</blockquote>
+
+<em>A</em> is about to learn whether or not <em>T</em> is true
+(nothing more).  If <em>A</em> learns that <em>T</em> is true, the
+Simple Principle of Conditionalization would require <em>A</em> to
+change her probability assignment to <em>S</em>
+(<em>P</em><sub><em>f</em></sub>(<em>S</em>)) to equal
+<em>P</em><sub><em>i</em></sub>(<em>S</em>/<em>T</em>) = &frac12;.
+Suppose <em>A</em> realizes that, if she learns that <em>T</em> is
+true, she will change her probability assignment to <em>S</em> to
+<em>P</em><sub><em>f</em></sub>(<em>S</em>) = 6/10 &gt;
+<em>P</em><sub><em>i</em></sub>(<em>S</em>/<em>T</em>) [a parallel
+argument applies to the case in which <em>A</em> knows in advance that
+were she to learn that <em>T</em>,
+<em>P</em><sub><em>f</em></sub>(<em>S</em>) would be less than
+<em>P</em><sub><em>i</em></sub>(<em>S</em>/<em>T</em>)].
+
+<p>
+
+Initially, bookie <em>B</em> can make the following wagers with
+<em>A</em>: </p>
+
+<blockquote> (1) <em>B</em> sells <em>A</em> an unconditional wager
+that pays $.10 if <em>T</em> is true for
+<em>P</em><sub><em>i</em></sub>(<em>T</em>)
+ &times; $.10 = 1/5
+ &times; $.10 = $.02. 
+
+<p>
+
+(2) <em>B</em> buys from <em>A</em> a unit wager on <em>S</em>
+conditional on <em>T</em> for
+<em>P</em><sub><em>i</em></sub>(<em>S</em>/<em>T</em>)
+ &times; $1 = &frac12; 
+ &times; $1 = $.50.</p>
+</blockquote>
+
+<p>
+
+After it is determined whether or not <em>T</em> is true, there are two
+possibilities:</p>
+
+<blockquote>
+(a) <em>T</em> is not true. 
+</blockquote>
+
+<p>
+
+In that case, <em>A</em> loses $.02 on the first wager and the second
+wager is called off, so no one wins or loses anything on the second
+wager. The result is a net loss of $.02 for <em>A</em>.</p>
+
+<blockquote>
+(b) <em>T</em> is true. 
+</blockquote>
+
+<p>
+
+In that case, <em>B</em> makes an additional wager with <em>A</em>:</p>
+
+<blockquote>
+(3) <em>B</em> sells to <em>A</em> an unconditional unit wager on <em>S</em> for
+<em>P</em><sub><em>f</em></sub>(<em>S</em>) 
+ &times; $1 = 6/10 
+ &times; $1 = $.60.
+</blockquote>
+
+<p>
+
+Then there are two further sub-possibilities:</p>
+
+<blockquote>
+
+(b1) <em>S</em> is true. <em>A</em> gains $.08 on wager 1 (the $.10
+pay-off, less the $.02 that <em>A</em> paid for the wager); <em>A</em>
+loses $.50 on wager 2 (<em>B</em> paid <em>A</em> $.50 for the wager,
+but <em>A</em> must pay $1 to <em>B</em>); <em>A</em> gains $.40 on
+wager 3 (<em>A</em> paid <em>B</em> $.60 for the wager, but <em>B</em>
+must pay <em>A</em> $1). The net result of all three wagers is a $.02
+loss for <em>A</em>.
+
+<p>
+
+(b2) <em>S</em> is not true. Again <em>A</em> gains $.08 on wager 1
+(the $.10 pay-off, less the $.02 that <em>A</em> paid for the wager);
+<em>A</em> gains $.50 on wager 2 (<em>B</em> paid <em>A</em> $.50 for
+the wager, and <em>A</em> does not pay <em>B</em> anything);
+<em>A</em> loses $.60 on wager 3 (<em>A</em> paid <em>B</em> $.60 for
+the wager, and <em>B</em> does not pay <em>A</em> anything). Again the
+net result of all three wagers is a $.02 loss for <em>A</em>.</p>
+ </blockquote>
+
+<p>
+
+Because (a), (b1), and (b2) exhaust all the logical possibilities, the
+example is one in which <em>A</em> is guaranteed to lose $.02, no
+matter what happens. Because wager 3 cannot be made at the same time
+as wagers 1 and 2, the combination of wagers 1-3 is a diachronic Dutch
+Book.</p>
+
+<p>
+ <a href="index.html#return-2">Return to Bayesian Epistemology</a></p>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2008</a> by
+
+<br />
+<a href="http://faculty.washington.edu/wtalbott/" target="other">William Talbott</a>
+
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">CSLI, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p class="csli-logo"><a href="https://www-csli.stanford.edu/"><img src="../../symbols/SU_csli.png" width="355" alt="Stanford Center for the Study of Language and Information" /></a></p>
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2016</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Center for the Study of Language and Information (CSLI), Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+
+
+</body>
+</html>

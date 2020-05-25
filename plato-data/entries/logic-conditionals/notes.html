@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie6 ie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 ie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 ie"> <![endif]-->
+<!--[if IE 9]>    <html class="ie9 ie"> <![endif]-->
+<!--[if !IE]> --> <html> <!-- <![endif]-->
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>
+The Logic of Conditionals &gt; Notes (Stanford Encyclopedia of Philosophy)
+</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="robots" content="noarchive, noodp" />
+<meta name="DCTERMS.ispartof" content="https://plato.stanford.edu/entries/logic-conditionals/" />
+
+<!-- NOTE: Import webfonts using this link: -->
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,200&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css" />
+
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/bootstrap-responsive.min.css" />
+<link rel="stylesheet" type="text/css" href="../../css/font-awesome.min.css" />
+<!--[if IE 7]> <link rel="stylesheet" type="text/css" href="../../css/font-awesome-ie7.min.css"> <![endif]-->
+<link rel="stylesheet" type="text/css" media="screen,handheld" href="../../css/style.css" />
+<link rel="stylesheet" type="text/css" media="print" href="../../css/print.css" />
+<link rel="stylesheet" type="text/css" href="../../css/entry.css" />
+<!--[if IE]> <link rel="stylesheet" type="text/css" href="../../css/ie.css" /> <![endif]-->
+<script type="text/javascript" src="../../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../../js/bootstrap.min.js"></script>
+
+<!-- NOTE: Javascript for sticky behavior needed on article and ToC pages -->
+<script type="text/javascript" src="../../js/jquery-scrolltofixed-min.js"></script>
+<script type="text/javascript" src="../../js/entry.js"></script>
+
+<!-- SEP custom script -->
+<script type="text/javascript" src="../../js/sep.js"></script>
+</head>
+
+<!-- NOTE: The nojs class is removed from the page if javascript is enabled. Otherwise, it drives the display when there is no javascript. -->
+<body class="nojs article" id="pagetopright">
+<div id="container">
+<div id="header-wrapper">
+  <div id="header">
+    <div id="branding">
+      <div id="site-logo"><a href="../../index.html"><img src="../../symbols/sep-man-red.png" alt="SEP logo" /></a></div>
+      <div id="site-title"><a href="../../index.html">Stanford Encyclopedia of Philosophy</a></div>
+    </div>
+    <div id="navigation">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <button class="btn btn-navbar collapsed" data-target=".collapse-main-menu" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Menu </button>
+            <div class="nav-collapse collapse-main-menu in collapse">
+              <ul class="nav">
+                <li class="dropdown open"><a id="drop1" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-book"></i> Browse</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop1">
+                    <li><a href="../../contents.html">Table of Contents</a></li>
+                    <li><a href="../../new.html">What's New</a></li>
+                    <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+                    <li><a href="../../published.html">Chronological</a></li>
+                    <li><a href="../../archives/">Archives</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop2" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-info-sign"></i> About</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop2">
+                    <li><a href="../../info.html">Editorial Information</a></li>
+                    <li><a href="../../about.html">About the SEP</a></li>
+                    <li><a href="../../board.html">Editorial Board</a></li>
+                    <li><a href="../../cite.html">How to Cite the SEP</a></li>
+                    <li><a href="../../special-characters.html">Special Characters</a></li>
+                    <li><a href="../../tools/">Advanced Tools</a></li>
+                    <li><a href="../../contact.html">Contact</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown open"><a id="drop3" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"><i class="icon-leaf"></i> Support SEP</a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+                    <li><a href="../../support/">Support the SEP</a></li>
+                    <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+                    <li><a href="../../support/donate.html">Make a Donation</a></li>
+                    <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End navigation -->
+    
+    <div id="search">
+      <form id="search-form" method="get" action="../../search/searcher.py">
+        <input type="search" name="query" placeholder="Search SEP" />
+        <div class="search-btn-wrapper"><button class="btn search-btn" type="submit"><i class="icon-search"></i></button></div>
+      </form>
+    </div>
+    <!-- End search --> 
+    
+  </div>
+  <!-- End header --> 
+</div>
+<!-- End header wrapper -->
+
+<div id="content">
+
+<!-- Begin article sidebar -->
+<div id="article-sidebar" class="sticky">
+  <div class="navbar">
+    <div class="navbar-inner">
+      <div class="container">
+        <button class="btn btn-navbar" data-target=".collapse-sidebar" data-toggle="collapse" type="button"> <i class="icon-reorder"></i> Entry Navigation </button>
+        <div id="article-nav" class="nav-collapse collapse-sidebar in collapse">
+          <ul class="nav">
+            <li><a href="./">Back to Entry <i class="icon-external-link"></i></a></li>
+            <li><a href="./#toc">Entry Contents <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Bib">Entry Bibliography <i class="icon-external-link"></i></a></li>
+            <li><a href="./#Aca">Academic Tools <i class="icon-external-link"></i></a></li>
+            <li><a href="https://leibniz.stanford.edu/friends/preview/logic-conditionals/">Friends PDF Preview <i class="icon-external-link"></i></a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/archinfo.cgi?entry=logic-conditionals">Author and Citation Info <i class="icon-external-link"></i></a> </li>
+            <li><a href="#pagetopright" class="back-to-top">Back to Top <i class="icon-angle-up icon2x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End article sidebar --> 
+
+<!-- NOTE: Article content must have two wrapper divs: id="article" and id="article-content" -->
+<div id="article">
+<div id="article-content">
+
+<!-- BEGIN ARTICLE HTML -->
+<h4 id="supphead"></h4>
+
+<div id="aueditable">
+<!--DO NOT MODIFY THIS LINE AND ABOVE--> 
+<h2>Notes to <a href="index.html">The Logic of Conditionals</a></h2>
+
+<p>
+
+<a href="index.html#note-1" name="1">1.</a> See Ramsey (1990),
+pp. 154-55.</p>
+
+<p>
+
+<a href="index.html#note-2" name="2">2.</a> And the corresponding
+notion of acceptance cannot be reduced to belief in the truth of any
+proposition.</p>
+
+<p>
+
+<a href="index.html#note-3" name="3">3.</a> See G&auml;rdenfors (1988)
+chapters 1 to 5, and Alchourr&oacute;n, G&auml;rdenfors, and Makinson
+(1985).</p>
+
+<p>
+
+<a href="index.html#note-4" name="4">4.</a> G&auml;rdenfors (1987)
+explores several variations of (GRT), but none of them seems to offer
+a better representation of Ramsey's intuitions.</p>
+
+<p>
+
+<a href="index.html#note-5" name="5">5.</a> In this article he
+explores various possible definitions of the conditional in this
+setting. He treats the conditional as a relativized modal
+[<em>a</em>]<em>b</em> and he also considers its dual,
+(<em>a</em>)<em>b</em>, which allows for a rich representational
+framework. A complete characterization of the system
+<strong>B</strong> of Burgess is presented. Girard also considers the
+characterization of <strong>B</strong> presented here (below, in terms
+of set selection functions) and compares it with his own account.</p>
+
+<p>
+
+<a href="index.html#note-6" name="6">6.</a> Of course the proposition
+&lsquo;|<em>a</em>|&rsquo; should be indexed by the model <em>M</em>
+and written |<em>a</em>|<sup><em>M</em></sup>. The index given by the
+model of reference is here dropped for simplicity. When needed we will
+make it explicit.</p>
+
+<p>
+
+<a href="index.html#note-7" name="7">7.</a> A sentence <em>a</em> is
+entertainable in a model <em>M</em> if and only if
+|<em>a</em>|<sup><em>M</em></sup> &cap; $<sub><em>i</em></sub> &ne;
+&empty;.</p>
+
+<p>
+
+<a href="index.html#note-8" name="8">8.</a> Two additional salient
+examples of minimal change theories are the theories of Veltman (1985)
+and Kratzer (1981). We refer the reader to Cross and Nute (2001) for a
+review of these theories.</p>
+
+<p>
+
+<a href="index.html#note-9" name="9">9.</a> Theories that adopt the
+modified informal interpretation of the selection function are called
+in <em>small change theories</em> by Cross and Nute (2001). The idea
+of selecting he <em>a</em>-worlds that are sufficiently similar to
+<em>i</em> to assess the truth value of a conditional <em>a</em> &gt;
+<em>b</em> was historically proposed by Aqvist (1973).</p>
+
+<p>
+
+<a href="index.html#note-10" name="10">10.</a> Cross and Nute (2001)
+call these theories <em>maximal change theories</em>. We prefer to use
+a different terminology. The selected worlds <em>can</em> differ
+maximally from the world of reference as long as they respect some
+local similarity constraints, but they do not <em>need</em> to differ
+maximally from the world of reference, regarding non-local
+features. The important issue is that similarity is restricted to a
+set of local features, while the other details are irrelevant for
+comparisons.</p>
+
+<p>
+
+<a href="index.html#note-11" name="11">11.</a> Following notation and
+presentation used in Cross and Nute (2001).</p>
+
+<p>
+<a href="index.html#note-12" name="12">12.</a> But note that p. 189 of
+McGee (1994) mistakenly reverses the direction of the conditional and
+thus puts the nonzero probability condition on the consequent instead
+of the antecedent. 
+</p>
+
+<p>
+
+<a href="index.html#note-13" name="13">13.</a> See H&aacute;jek and
+Hall (1994) for a detailed assessment of tenability results. In
+particular notice that there is an existential and doxastic
+interpretation of <em>CCCP</em> that might have some credibility,
+namely that for each <em>P</em> that could represent an agent's belief
+system, there is some <em>CCCP</em>-conditional.</p>
+
+<p>
+
+<a href="index.html#note-14" name="14">14.</a> Skyrms (1994) compares
+Adams's theory of conditionals with different probabilistic models
+proposed by Skyrms. A more mature theory is presented in Skyrms
+(1998).</p>
+
+<p>
+
+<a href="index.html#note-15" name="15">15.</a> Conditional Coherence
+does not capture, nevertheless, important aspects of De Finetti's
+ideas about primitive conditional probabilities. Unlike probabilists,
+De Finetti uses a primitively given notion of information in order to
+define conditional probability. Such notion of information set does
+not admit, in his construction, a probabilistic account.  Some
+repercussions of this aspect of De Finetti's notion will be discussed
+below.</p>
+
+<p>
+
+<a href="index.html#note-16" name="16">16.</a> Perhaps the most
+poignant result is presented in Seidenfeld and Kadane (1984), where it
+is shown that each finitely additive probability fails to have the
+property that De Finetti called <em>conglomerability</em> in some
+denumerable partition. See also Dubins (1975).</p>
+
+<p>
+
+<a href="index.html#note-17" name="17">17.</a> If
+<em>E</em><sub>1</sub>, <em>E</em><sub>2</sub>, &hellip; is a
+countable sequence of pairwise disjoint sets in the probabilistic
+space, the measure of the union of all the events
+<em>E</em><sub><em>i</em></sub> is equal to the sum of the measures of
+each <em>E</em><sub><em>i</em></sub>.</p>
+
+<p>
+
+<a href="index.html#note-18" name="18">18.</a> Notice that this is
+just an instance (using propositions rather than sentences) of the
+previously stated axiom (5).</p>
+
+<p>
+
+<a href="index.html#note-19" name="19">19.</a> The term
+&lsquo;expectation&rsquo; is not decision-theoretically motivated. Its
+motivation comes from the field of non-monotonic logic, where
+&lsquo;expectation&rsquo; models of defeasible reasoning are
+usual. See Arl&oacute;-Costa (2001) for details.</p>
+
+<p>
+
+<a href="index.html#note-20" name="20">20.</a> Notice that CA is
+stronger than the simpler assumption that
+<em>P</em>(<em>X</em>|<em>U</em>) is either a countably additive
+measure or has constant value 1.</p>
+
+<p>
+
+<a href="index.html#note-21" name="21">21.</a> An account of
+conditional probability compatible with our model is the one offered
+by Lester Dubins (1975). See Seidenfeld, Schervish, and Kadane (2001)
+for an overview of the interest and limitations of finitely additive
+measures.</p>
+
+<p>
+
+<a href="index.html#note-22" name="22">22.</a> The Generalized Horn
+Flat patterns have the following form:
+(<em>a</em><sub><em>1</em></sub> &gt;
+<em>b</em><sub><em>1</em></sub>), &hellip;,
+(<em>a</em><sub><em>n</em></sub> &gt; <em>b</em><sub><em>n</em></sub>)
+ &#8866;
+ (<em>a</em> &gt; <em>b</em>); where negations are allowed in the left
+hand side of the pattern and where the letters
+<em>a</em><sub><em>i</em></sub>, <em>a</em>, etc only admit
+conditional-free instances.
+
+</p>
+
+<p>
+
+<a href="index.html#note-23" name="23">23.</a> We remind the reader
+that &lsquo;<em>A</em>&rsquo; here stands for the proposition
+expressed by the letter &lsquo;<em>a</em>&rsquo;.</p>
+
+<p>
+
+<a href="index.html#note-24" name="24">24.</a> To visualize
+counterexamples consider the <strong>VC</strong>, <strong>VW</strong>
+or <strong>V</strong> possible-worlds models where the closest
+<em>A</em>-worlds to any &not;<em>A</em>- and <em>B</em>-world contain
+at least an <em>A</em>- and &not;<em>B</em>-world.</p>
+
+<p>
+
+<a href="index.html#note-25" name="25">25.</a> A fourth solution
+proposed by Rott (1991) and Cross (1990) consists in making the
+underlying notion of consequence non-monotonic. Some models of this
+sort are nevertheless known to lead to triviality as the result of
+Makinson (1990) indicates, even when Makinson's result does not
+exactly bear on on the suggestion endorsed by Rott and Cross. The
+challenge to (GRT) presented in Theorem 3 above cannot be solved by
+the adoption of models where the monotonicity of the underlying notion
+of consequence is dropped.</p>
+
+<p>
+
+<a href="index.html#note-26" name="26">26.</a> For a similar proposal
+in the probabilistic setting see Skyrms (1987).</p>
+
+<p>
+
+<a href="index.html#note-27" name="27">27.</a> This property is, as we
+saw, derivable from (GRT). It plays a crucial role in proving Theorem
+4.</p>
+
+</div><!-- #aueditable --><!--DO NOT MODIFY THIS LINE AND BELOW-->
+
+<!-- END ARTICLE HTML -->
+
+</div> <!-- End article-content -->
+
+  <div id="article-copyright">
+    <p>
+ <a href="../../info.html#c">Copyright &copy; 2007</a> by
+
+<br />
+Horacio Arlo-Costa
+
+    </p>
+  </div>
+
+</div> <!-- End article -->
+
+<!-- NOTE: article banner is outside of the id="article" div. -->
+<div id="article-banner" class="scroll-block">
+  <div id="article-banner-content">
+    <a href="../../fundraising/">
+    Open access to the SEP is made possible by a world-wide funding initiative.<br />
+    The Encyclopedia Now Needs Your Support<br />
+    Please Read How You Can Help Keep the Encyclopedia Free</a>
+  </div>
+</div> <!-- End article-banner -->
+
+    </div> <!-- End content -->
+
+    <div id="footer">
+
+      <div id="footer-menu">
+        <div class="menu-block">
+          <h4><i class="icon-book"></i> Browse</h4>
+          <ul role="menu">
+            <li><a href="../../contents.html">Table of Contents</a></li>
+            <li><a href="../../new.html">What's New</a></li>
+            <li><a href="https://plato.stanford.edu/cgi-bin/encyclopedia/random">Random Entry</a></li>
+            <li><a href="../../published.html">Chronological</a></li>
+            <li><a href="../../archives/">Archives</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-info-sign"></i> About</h4>
+          <ul role="menu">
+            <li><a href="../../info.html">Editorial Information</a></li>
+            <li><a href="../../about.html">About the SEP</a></li>
+            <li><a href="../../board.html">Editorial Board</a></li>
+            <li><a href="../../cite.html">How to Cite the SEP</a></li>
+            <li><a href="../../special-characters.html">Special Characters</a></li>
+            <li><a href="../../tools/">Advanced Tools</a></li>
+            <li><a href="../../contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="menu-block">
+          <h4><i class="icon-leaf"></i> Support SEP</h4>
+          <ul role="menu">
+            <li><a href="../../support/">Support the SEP</a></li>
+            <li><a href="../../support/friends.html">PDFs for SEP Friends</a></li>
+            <li><a href="../../support/donate.html">Make a Donation</a></li>
+            <li><a href="../../support/sepia.html">SEPIA for Libraries</a></li>
+          </ul>
+        </div>
+      </div> <!-- End footer menu -->
+
+      <div id="mirrors">
+        <div id="mirror-info">
+          <h4><i class="icon-globe"></i> Mirror Sites</h4>
+          <p>View this site from another server:</p>
+        </div>
+        <div class="btn-group open">
+          <a class="btn dropdown-toggle" data-toggle="dropdown" href="https://plato.stanford.edu/">
+            <span class="flag flag-usa"></span> USA (Main Site) <span class="caret"></span>
+            <span class="mirror-source">CSLI, Stanford University</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="../../mirrors.html">Info about mirror sites</a></li>
+          </ul>
+        </div>
+      </div> <!-- End mirrors -->
+      
+      <div id="site-credits">
+        <p class="csli-logo"><a href="https://www-csli.stanford.edu/"><img src="../../symbols/SU_csli.png" width="355" alt="Stanford Center for the Study of Language and Information" /></a></p>
+        <p>The Stanford Encyclopedia of Philosophy is <a href="../../info.html#c">copyright &copy; 2016</a> by <a href="http://mally.stanford.edu/">The Metaphysics Research Lab</a>, Center for the Study of Language and Information (CSLI), Stanford University</p>
+        <p>Library of Congress Catalog Data: ISSN 1095-5054</p>
+      </div> <!-- End site credits -->
+
+    </div> <!-- End footer -->
+
+  </div> <!-- End container -->
+
+   <!-- NOTE: Script required for drop-down button to work (mirrors). -->
+  <script>
+    $('.dropdown-toggle').dropdown();
+  </script>
+
+
+
+</body>
+</html>
