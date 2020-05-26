@@ -124,4 +124,6 @@ def clean_data(entries):
 
 
 if __name__ == "__main__":
-    print(get_some_text())
+    for t in get_some_text():
+        for s in t:
+            print(s)
